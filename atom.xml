@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lvwi.github.io/"/>
-  <updated>2020-01-01T12:32:26.072Z</updated>
+  <updated>2020-01-04T04:54:06.375Z</updated>
   <id>http://lvwi.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习如何更换blog的主题</title>
+    <link href="http://lvwi.github.io/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/"/>
+    <id>http://lvwi.github.io/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/</id>
+    <published>2020-01-04T04:53:37.000Z</published>
+    <updated>2020-01-04T04:54:06.375Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2020年1月4号-学习如何更换blog的主题"><a href="#2020年1月4号-学习如何更换blog的主题" class="headerlink" title="2020年1月4号 学习如何更换blog的主题"></a>2020年1月4号 学习如何更换blog的主题</h1><h2 id="第一步-找到喜欢的主题"><a href="#第一步-找到喜欢的主题" class="headerlink" title="第一步 找到喜欢的主题"></a>第一步 找到喜欢的主题</h2><ul><li>使用命令 <code>$ git clone 主题的地址</code>  ，注意主题要clone到blog文件夹中的themes文件夹内</li></ul><h2 id="第二步-修改配置文件并安装"><a href="#第二步-修改配置文件并安装" class="headerlink" title="第二步  修改配置文件并安装"></a>第二步  修改配置文件并安装</h2><blockquote><p>git克隆完成后，打开本地blog下的“_config.yml”配置文件（非主题文件下）</p><p>找到theme配置选项, 将theme选项配置为新下载的主题（“：”冒号之后空格不可少 空格后为新下载的主题名）</p></blockquote><h2 id="第三步-修改主题配置文件"><a href="#第三步-修改主题配置文件" class="headerlink" title="第三步 修改主题配置文件"></a>第三步 修改主题配置文件</h2><ul><li>打开新主题路径下的”_config.yml”,按照主题作者要求进行相关配置</li></ul><h2 id="第四步-调试主题-发布"><a href="#第四步-调试主题-发布" class="headerlink" title="第四步 调试主题,发布"></a>第四步 调试主题,发布</h2><blockquote><p>根据自己的需要,修改主题的部分信息</p><p><code>$ hexo server --debug</code>可以在blog文件夹下,使用上述语句,进行调试</p><p>调试无误后,即可发布到自己的blog上啦</p><p><code>$ hexo -g d</code>进行发布</p></blockquote><h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>在修改主题配置文件的时候发现的问题</p><blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;2020年1月4号-学习如何更换blog的主题&quot;&gt;&lt;a href=&quot;#2020年1月4号-学习如何更换blog的主题&quot; class=&quot;headerlink&quot; title=&quot;2020年1月4号 学习如何更换blog的主题&quot;&gt;&lt;/a&gt;2020年1月4号 学习如何更换b
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>2019年最后的学习</title>
