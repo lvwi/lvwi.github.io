@@ -63,6 +63,66 @@
       <div id="middlecontent" title class="global-width sidebar-right">
         <section id="main">
   
+    <article id="post-20200107微信小程序新建表格-并添加点击数据跳转页面功能" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/">20200107微信小程序新建表格,并添加点击数据跳转页面功能</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/" class="article-date">
+  <time datetime="2020-01-07T12:32:53.000Z" itemprop="datePublished">2020-01-07</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h2 id="微信小程序新建表格-并添加点击数据跳转页面功能"><a href="#微信小程序新建表格-并添加点击数据跳转页面功能" class="headerlink" title="微信小程序新建表格,并添加点击数据跳转页面功能"></a>微信小程序新建表格,并添加点击数据跳转页面功能</h2><h4 id="一-新建表格"><a href="#一-新建表格" class="headerlink" title="一 . 新建表格"></a>一 . 新建表格</h4><ol>
+<li>在wxss的页面中添加如下样式,样式数据可自行调整</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">.table &#123;</span><br><span class="line">  border: 0px solid black;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line">.tr &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  width: 100%;</span><br><span class="line">  justify-content: center;</span><br><span class="line">  height: 3rem;</span><br><span class="line">  align-items: center;</span><br><span class="line">&#125;</span><br><span class="line">.td &#123;</span><br><span class="line">    width:40%;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    text-align: center;</span><br><span class="line">&#125;</span><br><span class="line">.bg-w&#123;</span><br><span class="line">  background: snow;</span><br><span class="line">&#125;</span><br><span class="line">.bg-g&#123;</span><br><span class="line">  background: #E6F3F9;</span><br><span class="line">&#125;</span><br><span class="line">.th &#123;</span><br><span class="line">  width: 40%;</span><br><span class="line">  justify-content: center;</span><br><span class="line">  background: #3366FF;</span><br><span class="line">  color: #fff;</span><br><span class="line">  display: flex;</span><br><span class="line">  height: 3rem;</span><br><span class="line">  align-items: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="2">
+<li>在js页面中添加数据列表</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  list:[</span><br><span class="line">    &#123;&quot;code&quot;:&quot;1&quot;,&quot;j&quot;:&quot;第一章&quot;,&quot;c&quot;:&quot;第一章&quot;&#125;,</span><br><span class="line">    &#123;&quot;code&quot;:&quot;2&quot;,&quot;j&quot;:&quot;第二章&quot;,&quot;c&quot;:&quot;第二章&quot;&#125;,</span><br><span class="line">    &#123;&quot;code&quot;:&quot;3&quot;,&quot;j&quot;:&quot;第三章&quot;,&quot;c&quot;:&quot;第三章&quot;&#125;,</span><br><span class="line">    &#123;&quot;code&quot;:&quot;4&quot;,&quot;j&quot;:&quot;第四章&quot;,&quot;c&quot;:&quot;第四章&quot;&#125;,</span><br><span class="line">    &#123;&quot;code&quot;:&quot;5&quot;,&quot;j&quot;:&quot;第五章&quot;,&quot;c&quot;:&quot;第五章&quot;&#125;,</span><br><span class="line">    &#123;&quot;code&quot;:&quot;6&quot;,&quot;j&quot;:&quot;第六章&quot;,&quot;c&quot;:&quot;第六章&quot;&#125;,</span><br><span class="line">    &#123;&quot;code&quot;:&quot;7&quot;,&quot;j&quot;:&quot;第七章&quot;,&quot;c&quot;:&quot;第七章&quot;&#125;,</span><br><span class="line">    &#123;&quot;code&quot;:&quot;8&quot;,&quot;j&quot;:&quot;第八章&quot;,&quot;c&quot;:&quot;第八章&quot;&#125;,</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="3">
+<li>在wxml文件下新增表格</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class&#x3D;&quot;table&quot;&gt;</span><br><span class="line">        &lt;view class&#x3D;&quot;tr bg-w&quot;&gt;</span><br><span class="line">            &lt;view class&#x3D;&quot;th&quot;&gt;表头1&lt;&#x2F;view&gt;</span><br><span class="line">            &lt;view class&#x3D;&quot;th&quot;&gt;表头2&lt;&#x2F;view&gt;</span><br><span class="line">            &lt;view class&#x3D;&quot;th&quot;&gt;表头3&lt;&#x2F;view&gt;</span><br><span class="line">        &lt;&#x2F;view&gt;</span><br><span class="line">        &lt;block wx:for&#x3D;&quot;&#123;&#123;list&#125;&#125;&quot; wx:key&#x3D;&quot;&#123;&#123;code&#125;&#125;&quot; &gt;</span><br><span class="line">            &lt;view class&#x3D;&quot;tr bg-g&quot;  wx:if&#x3D;&quot;&#123;&#123;index % 2 &#x3D;&#x3D; 0&#125;&#125;&quot;&gt;</span><br><span class="line">              &lt;view class&#x3D;&quot;td&quot;&gt;&#123;&#123;item.code&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">              &lt;view class&#x3D;&quot;td&quot; bindtap&#x3D;&quot;btn&#123;&#123;item.code&#125;&#125;&quot;&gt;&#123;&#123;item.j&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">              &lt;view class&#x3D;&quot;td&quot;&gt;&#123;&#123;item.c&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">            &lt;&#x2F;view&gt;</span><br><span class="line">            &lt;view class&#x3D;&quot;tr&quot; wx:else&gt;</span><br><span class="line">              &lt;view class&#x3D;&quot;td&quot;&gt;&#123;&#123;item.code&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">              &lt;view class&#x3D;&quot;td&quot; bindtap&#x3D;&quot;btn&#123;&#123;item.code&#125;&#125;&quot;&gt;&#123;&#123;item.j&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">              &lt;view class&#x3D;&quot;td&quot;&gt;&#123;&#123;item.c&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">            &lt;&#x2F;view&gt;</span><br><span class="line">        &lt;&#x2F;block&gt;</span><br><span class="line">    &lt;&#x2F;view&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>以上内容参考:<a href="https://blog.csdn.net/benben0729/article/details/81567967" target="_blank" rel="noopener">https://blog.csdn.net/benben0729/article/details/81567967</a></p>
+<h2 id="二-表格中点击数据跳转"><a href="#二-表格中点击数据跳转" class="headerlink" title="二 表格中点击数据跳转"></a>二 表格中点击数据跳转</h2><p>在上述第3点的wxml代码中有如下代码</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class&#x3D;&quot;td&quot; bindtap&#x3D;&quot;btn&#123;&#123;item.code&#125;&#125;&quot;&gt;&#123;&#123;item.j&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">bindtap&#x3D;&quot;btn&#123;&#123;item.code&#125;&#125;&quot; 这段内容就是跳转所需要的代码</span><br></pre></td></tr></table></figure></div>
+
+ 是在js中取的对应的数据,然后在js中编写如下跳转代码
+
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">btn2: function (e) &#123;</span><br><span class="line">    wx.navigateTo(&#123;</span><br><span class="line">      url: &#39;..&#x2F;study-2&#x2F;study-2&#39;,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></div>
+
+<p>当然,目前我还未解决如何在点击的时候传递数据到后台, 使得js中的跳转代码也能够一步到位,不需要过多重复</p>
+<p>未完待续…</p>
+
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
     <article id="2020年1月4号-学习如何更换blog的主题" class="article global-container article-type-2020年1月4号" itemscope itemprop="blogPost">
   
     <header class="article-header">
@@ -570,6 +630,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/">20200107微信小程序新建表格,并添加点击数据跳转页面功能</a>
+          </li>
         
           <li>
             <a href="/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/">学习如何更换blog的主题</a>
