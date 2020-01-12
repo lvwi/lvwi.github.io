@@ -296,7 +296,7 @@ html, body, #fullpage{
   margin-bottom: 50px;
   position: relative;
   padding: 30px;
-  background: rgba(255, 255, 255, .85)  
+  background: rgba(255, 255, 255, .85);
 }
 .widget-box::before, .widget-box::after {
   content: "";
@@ -341,7 +341,7 @@ html, body, #fullpage{
 }
 .avatar-slogan {
   writing-mode: vertical-lr;
-  max-height: 200px;
+  max-height: 220px;
 }
 .global-container {
   box-shadow: 1px 2px 3px #ddd;
