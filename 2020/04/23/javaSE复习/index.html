@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>javaSE复习 - lvv&#039;s blog</title><meta description="摘要javaSE复习-20190416"><meta property="og:type" content="article"><meta property="og:title" content="javaSE复习"><meta property="og:url" content="http://lvwi.github.io/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/"><meta property="og:site_name" content="时遇诺"><meta property="og:description" content="摘要javaSE复习-20190416"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2020-04-23T11:38:46.000Z"><meta property="article:modified_time" content="2020-04-23T11:40:39.975Z"><meta property="article:author" content="时遇诺"><meta property="article:tag" content="categories-java"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="http://lvwi.github.io/img/avatar.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://lvwi.github.io/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/"},"headline":"javaSE复习","image":["http://lvwi.github.io/img/avatar.png"],"datePublished":"2020-04-23T11:38:46.000Z","dateModified":"2020-04-23T11:40:39.975Z","author":{"@type":"Person","name":"removeif"},"description":"摘要javaSE复习-20190416"}</script><link rel="alternative" href="/atom.xml" title="lvv&#039;s blog" type="application/atom+xml"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="/css/style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><script src="/js/md5.min.js"></script><link rel="stylesheet" href="/live2d/waifu.css"><script type="text/javascript" async src="/live2d/autoload.js"></script></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="lvv&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/media">影音</a><a class="navbar-item" href="/album">相册</a><a class="navbar-item" href="/friend">友链</a><a class="navbar-item" href="/self-talking">碎碎念</a><a class="navbar-item" href="/message">留言</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-04-23T11:38:46.000Z">2020-04-23</time><a class="commentCountImg" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/#comment-container"><span class="display-none-class">242e67a33da4c8922cd0da2af968ab52</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="242e67a33da4c8922cd0da2af968ab52"> 99+</span>    </a><span class="level-item">12 分钟 读完 (大约 1863 个字)</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">javaSE复习</h1><div class="content"><blockquote>
+<p>摘要<br>javaSE复习-20190416</p>
+<a id="more"></a>
+
+<h3 id="java语言特性"><a href="#java语言特性" class="headerlink" title="java语言特性"></a>java语言特性</h3><ul>
+<li>简单的</li>
+<li>分布式的</li>
+<li>面向对象的</li>
+<li>多线程的</li>
+<li>解释性语言</li>
+<li>安全的</li>
+<li>可移植的</li>
+<li>高性能的</li>
+<li>动态的</li>
+</ul>
+<h3 id="java环境配置"><a href="#java环境配置" class="headerlink" title="java环境配置"></a>java环境配置</h3><h4 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h4><ul>
+<li>安装jdk</li>
+<li>在 “系统变量” 中设置 3 项属性，JAVA_HOME： jdk的安装路径、PATH：<strong>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;*</strong>、CLASSPATH：%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;  (大小写无所谓)，使用 1.5 以上版本的 JDK，不用设置 CLASSPATH 环境变量</li>
+</ul>
+<h4 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h4><h4 id="ide工具"><a href="#ide工具" class="headerlink" title="ide工具"></a>ide工具</h4><p>Eclipes</p>
+<p>IDEA</p>
+<p>Notepad+++</p>
+<p>Netbeans</p>
+<hr>
+<h3 id="java基础语法"><a href="#java基础语法" class="headerlink" title="java基础语法"></a>java基础语法</h3><h4 id="实例变量"><a href="#实例变量" class="headerlink" title="实例变量"></a>实例变量</h4><p>​    每个对象都有独特的实例变量，对象的状态由这些实例变量的值决定。</p>
+<h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><p>​    方法就是行为，一个类可以有很多方法</p>
+<h4 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h4><p>​    对象是类的一个实例，有状态和行为</p>
+<h4 id="类"><a href="#类" class="headerlink" title="类"></a>类</h4><p>​    类是一个模板，它描述一类对象的行为和状态</p>
+<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><ol>
+<li>大小写敏感</li>
+<li>类名大写, 驼峰法</li>
+<li>方法名小写, 如:count ; countNumber</li>
+<li>原文件名与类名必须相同</li>
+<li>主方法: public static void main(String[] args){ }</li>
+</ol>
+<h3 id="java对象和类"><a href="#java对象和类" class="headerlink" title="java对象和类"></a>java对象和类</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><ul>
+<li>多态</li>
+<li>继承</li>
+<li>封装</li>
+<li>抽象</li>
+<li>类☆</li>
+<li>对象☆</li>
+<li>实例</li>
+<li>方法</li>
+<li>重载</li>
+</ul>
+<h4 id="对象-1"><a href="#对象-1" class="headerlink" title="对象"></a>对象</h4><p>有具体状态和行为的一个实物, 如一条小白狗</p>
+<h4 id="类-1"><a href="#类-1" class="headerlink" title="类"></a>类</h4><blockquote>
+<p>概念:一类具有相同状态和行为的事务, 如狗; 就像一个模板</p>
+</blockquote>
+<blockquote>
+<p>内容: </p>
+<ul>
+<li><p>变量 : 局部变量, 成员变量 , 类变量(静态变量)</p>
+</li>
+<li><p>方法</p>
+</li>
+<li><p>构造方法:  可显性写出构造方法,如无显性的系统会自动生成默认的,无参数的</p>
+</li>
+<li><p>构造方法的作用: 创建对象时需调用</p>
+</li>
+<li><p>构造方法可有多个, &gt;=1</p>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>创建对象:  类名  对象名=new  类的构造方法; 如类 Dog     对象的创建: Dog  dog=new Dog();</p>
+</blockquote>
+<blockquote>
+<p>通过对象调用变量和方法: 如上dog对象, 类Dog有变量 color, 方法 sleep(); </p>
+<p>调用: dog.color; dog.sleep()</p>
+</blockquote>
+<blockquote>
+<p>源文件声明:</p>
+<ul>
+<li>一个源文件中只能有一个public类</li>
+<li>一个源文件中可以有多个非public类</li>
+<li>文件名与public类名一致</li>
+</ul>
+</blockquote>
+<h3 id="java-的基本数据类型"><a href="#java-的基本数据类型" class="headerlink" title="java 的基本数据类型"></a>java 的基本数据类型</h3><p>创建变量相当于申请内存来存储值</p>
+<h4 id="内置数据类型"><a href="#内置数据类型" class="headerlink" title="内置数据类型"></a>内置数据类型</h4><p>六种数字类型（四个整数型，两个浮点型）</p>
+<p>byte: [-2^7, 2^7-1] , 默认为0, 占8为</p>
+<p>short : 占16位,默认为0</p>
+<p>int  :32位,默认为0</p>
+<p> long :64位, 默认为0L</p>
+<p> float  :32位 ,默认为0.0F</p>
+<p>double  :64位,默认为0.0d</p>
+<p>一种字符类型，还有一种布尔型</p>
+<p>char 单一的16位unicode字符,   如char a = ‘\u0001’;</p>
+<p>boolean 1位  默认false</p>
+<h4 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h4><p>引用类型指向一个对象, 默认值为null</p>
+<h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><p>不能修改, 可用final修饰</p>
+<p>final double  PI=3.1415926</p>
+<p>最好大写</p>
+<p>转义字符</p>
+<h4 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h4><p>低—&gt;高 可自动转换</p>
+<p>高—&gt;低  要强制转换</p>
+<h3 id="java变量类型"><a href="#java变量类型" class="headerlink" title="java变量类型"></a>java变量类型</h3><ul>
+<li>类变量：独立于方法之外的变量，用 static 修饰。跟着类，不跟对象；储存在静态存储区，在第一次访问时被创建，在程序结束时被销毁。</li>
+<li>实例变量：独立于方法之外的变量，不过没有 static 修饰。生命周期跟随对象一起；有默认值</li>
+<li>局部变量：类的方法,构造方法, 代码块中的变量。栈上分配，必须要初始化</li>
+</ul>
+<h3 id="java修饰符"><a href="#java修饰符" class="headerlink" title="java修饰符"></a>java修饰符</h3><h4 id="访问类修饰符"><a href="#访问类修饰符" class="headerlink" title="访问类修饰符"></a>访问类修饰符</h4><ul>
+<li><strong>default</strong> : 在同一包内可见，不使用任何修饰符。使用对象：类、接口、变量、方法。</li>
+<li><strong>private</strong> : 在同一类内可见。使用对象：变量、方法。 <strong>注意：不能修饰类（外部类）</strong></li>
+<li><strong>public</strong> : 对所有类可见。使用对象：类、接口、变量、方法</li>
+<li><strong>protected</strong> : 对同一包内的类和所有子类可见。使用对象：变量、方法。 <strong>注意：不能修饰类（外部类）</strong>。</li>
+</ul>
+<p>请注意以下方法继承的规则：</p>
+<ul>
+<li>父类中声明为 public 的方法在子类中也必须为 public。</li>
+<li>父类中声明为 protected 的方法在子类中要么声明为 protected，要么声明为 public，不能声明为 private。</li>
+<li>父类中声明为 private 的方法，不能够被继承。</li>
+</ul>
+<h4 id="非访问类修饰符"><a href="#非访问类修饰符" class="headerlink" title="非访问类修饰符"></a>非访问类修饰符</h4><ul>
+<li>static 修饰符，用来修饰类方法和类变量。</li>
+<li>final 修饰符，用来修饰类、方法和变量，final 修饰的类不能够被继承，修饰的方法不能被继承类重新定义，修饰的变量为常量，是不可修改的。</li>
+<li>abstract 修饰符，用来创建抽象类和抽象方法。</li>
+<li>synchronized 和 volatile 修饰符，主要用于线程的编程。</li>
+</ul>
+<h3 id="java运算符"><a href="#java运算符" class="headerlink" title="java运算符"></a>java运算符</h3><p>a++ 和++a的区别</p>
+<p>++a : 先自增,再运算 b=5; b=2*++a; –&gt;b=12</p>
+<p>a++:先运算,在自增 b=5;b=2*a++;–&gt;b=10</p>
+<p>a–和–a的区别</p>
+<p>同上</p>
+<h4 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h4><p>把变量转化为二进制形式,进行 比较</p>
+<p>如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A = <span class="number">0011</span> <span class="number">1100</span>   A=<span class="number">60</span></span><br><span class="line">B = <span class="number">0000</span> <span class="number">1101</span>   B=<span class="number">13</span></span><br><span class="line">(A&amp;B)=<span class="number">0000</span> <span class="number">1100</span></span><br><span class="line">（A | B）得到<span class="number">61</span>，即 <span class="number">0011</span> <span class="number">1101</span></span><br><span class="line">（A ^ B）得到<span class="number">49</span>，即 <span class="number">0011</span> <span class="number">0001</span>  对位值相同为<span class="number">0</span>, 否则为<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">variable x = (expression) ? value <span class="keyword">if</span> <span class="keyword">true</span> : value <span class="keyword">if</span> <span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="instanceof-运算符"><a href="#instanceof-运算符" class="headerlink" title="instanceof 运算符"></a>instanceof 运算符</h4><p>该运算符用于操作对象实例，检查该对象是否是一个特定类型（类类型或接口类型）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">( Object reference variable ) <span class="keyword">instanceof</span>  (<span class="class"><span class="keyword">class</span>/<span class="title">interface</span> <span class="title">type</span>)</span></span><br><span class="line"><span class="class">    左边的类型</span>=右边的类型, 返回 <span class="keyword">true</span> , 否则<span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="java循环语句"><a href="#java循环语句" class="headerlink" title="java循环语句"></a>java循环语句</h3><h4 id="while"><a href="#while" class="headerlink" title="while"></a>while</h4><p>while(boolean表达式){</p>
+<p>循环体</p>
+<p>}</p>
+<p>do{循环体}while(boolean表达式)</p>
+<h4 id="for"><a href="#for" class="headerlink" title="for"></a>for</h4><p>for(初始化;boolean表达式;更新){</p>
+<p>循环体</p>
+<p>}</p>
+<p>增强for循环</p>
+<p>​    只要用于数组, 声明语句用于声明新的变量, 类型要与数组中数据一致</p>
+<p>for(声明语句: 表达式){}</p>
+<h4 id="break"><a href="#break" class="headerlink" title="break"></a>break</h4><p>break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。</p>
+<p>break 跳出最里层的循环，并且继续执行该循环下面的语句</p>
+<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><p>continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代</p>
+<h3 id="java条件语句"><a href="#java条件语句" class="headerlink" title="java条件语句"></a>java条件语句</h3><h4 id="if—else"><a href="#if—else" class="headerlink" title="if—else"></a>if—else</h4><p>if(…..){….}else{….}</p>
+<h4 id="switch-case"><a href="#switch-case" class="headerlink" title="switch case"></a>switch case</h4><p>判断一个变量与一系列值中某个值是否相等，每个值称为一个分支。</p>
+<p>switch(expression)</p>
+<p>{    case value :       //语句       break; //可选</p>
+<p>​    case value :       //语句       break; //可选   </p>
+<p> //你可以有任意数量的case语句    </p>
+<p>default : //可选       //语句 }</p>
+<p><strong>当匹配成功后, 没有break,后续语句都会执行**</strong></p>
+<h3 id="number类和math类"><a href="#number类和math类" class="headerlink" title="number类和math类"></a>number类和math类</h3><h4 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h4><p>装箱; 拆箱</p>
+<p>方法</p>
+<h3 id="Character类"><a href="#Character类" class="headerlink" title="Character类"></a>Character类</h3><p>char的包装类</p>
+<p>转义序列: \t   \n   \r  \b   \f</p>
+<p>方法</p>
+<h3 id="String类"><a href="#String类" class="headerlink" title="String类"></a>String类</h3><p>String 类是不可改变的，所以你一旦创建了 String 对象，那它的值就无法改变了（详看笔记部分解析）。</p>
+<p>如果需要对字符串做很多修改，那么应该选择使用 <a href="https://www.runoob.com/java/java-stringbuffer.html">StringBuffer &amp; StringBuilder 类</a></p>
+<p>方法: String.length();  长度    String.concat(string2)  连接字符串, 也可以用 string+string</p>
+<p>创建格式化字符串 :静态方法 format() 返回一个String 对象</p>
+<h3 id="StringBuffer类和StringBuilder类"><a href="#StringBuffer类和StringBuilder类" class="headerlink" title="StringBuffer类和StringBuilder类"></a>StringBuffer类和StringBuilder类</h3><p>当对字符串进行修改的时候用 ; 此类的对象可被多次修改且不创建新的对象</p>
+<h4 id="两者区别"><a href="#两者区别" class="headerlink" title="两者区别"></a>两者区别</h4><p>StringBuilder 类在 Java 5 中被提出，它和 StringBuffer 之间的最大不同在于 StringBuilder 的方法不是线程安全的（不能同步访问), 他的速度比较快</p>
+<p>方法</p>
+<p>append()</p>
+</blockquote>
+<p>参考文章:<br><a href="">参考链接</a></p>
+</div><ul class="post-copyright"><li><strong>本文标题：</strong><a href="http://lvwi.github.io/2020/04/23/javaSE复习/">javaSE复习</a></li><li><strong>本文作者：</strong><a href="http://lvwi.github.io">lvv</a></li><li><strong>本文链接：</strong><a href="http://lvwi.github.io/2020/04/23/javaSE复习/">http://lvwi.github.io/2020/04/23/javaSE复习/</a></li><li><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</span></li></ul><div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 相关文章</span><br><span>  1.<a class="is-size-6" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/" target="_blank">JDBC--oracle数据库</a><br></span><span>  2.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/" target="_blank">javaSE复习3</a><br></span><span>  3.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/" target="_blank">javaSE复习2</a><br></span><span>  4.<a class="is-size-6" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/" target="_blank">数据库初级学习</a><br></span><span>  5.<a class="is-size-6" href="/2020/04/14/erp%E5%AD%A6%E4%B9%A0-0/" target="_blank">erp学习</a><br></span><span>  6.<a class="is-size-6" href="/2020/02/13/hexo%E4%B8%BB%E9%A2%98%E5%88%9B%E5%BB%BA%E5%AD%A6%E4%B9%A0/" target="_blank">hexo主题创建学习</a><br></span><span>  7.<a class="is-size-6" href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/" target="_blank">20200107微信小程序新建表格,并添加点击数据跳转页面功能</a><br></span><span>  8.<a class="is-size-6" href="/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/" target="_blank">学习如何更换blog的主题</a><br></span></div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 推荐文章</span><br><span>  1.<a class="is-size-6" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/" target="_blank">JDBC--oracle数据库</a><br></span><span>  2.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/" target="_blank">javaSE复习2</a><br></span><span>  3.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/" target="_blank">javaSE复习3</a><br></span><span>  4.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/" target="_blank">javaSE复习</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button is-info donate"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://raw" alt="支付宝"></span></a><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://raw" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">javaSE复习2</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/"><span class="level-item">数据库初级学习</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/gitalk/1.6.0/gitalk.css"><script> $.getScript('/js/gitalk.min.js', function () { 
+            var gitalk = new Gitalk({
+            id: '242e67a33da4c8922cd0da2af968ab52',
+            repo: 'blog_comment',
+            owner: '时遇诺',
+            clientID: '46a9f3481b46ea0129d8',
+            clientSecret: '79c7c9cb847e141757d7864453bcbf89f0655b24',
+            admin: ["removeif"],
+            createIssueManually: true,
+            distractionFreeMode: false,
+            perPage: 10,
+            pagerDirection: 'last',
+            
+            
+            enableHotKey: true,
+            isLocked: false
+        })
+        gitalk.render('comment-container')});</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget toc-scroll" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-java语言特性" href="#java语言特性"><span>java语言特性</span></a></li><li><a class="is-flex toc-item" id="toc-item-java环境配置" href="#java环境配置"><span>java环境配置</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-windows" href="#windows"><span>windows</span></a></li><li><a class="is-flex toc-item" id="toc-item-linux" href="#linux"><span>linux</span></a></li><li><a class="is-flex toc-item" id="toc-item-ide工具" href="#ide工具"><span>ide工具</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java基础语法" href="#java基础语法"><span>java基础语法</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-实例变量" href="#实例变量"><span>实例变量</span></a></li><li><a class="is-flex toc-item" id="toc-item-方法" href="#方法"><span>方法</span></a></li><li><a class="is-flex toc-item" id="toc-item-对象" href="#对象"><span>对象</span></a></li><li><a class="is-flex toc-item" id="toc-item-类" href="#类"><span>类</span></a></li><li><a class="is-flex toc-item" id="toc-item-基本语法" href="#基本语法"><span>基本语法</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java对象和类" href="#java对象和类"><span>java对象和类</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-基本概念" href="#基本概念"><span>基本概念</span></a></li><li><a class="is-flex toc-item" id="toc-item-对象-1" href="#对象-1"><span>对象</span></a></li><li><a class="is-flex toc-item" id="toc-item-类-1" href="#类-1"><span>类</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java-的基本数据类型" href="#java-的基本数据类型"><span>java 的基本数据类型</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-内置数据类型" href="#内置数据类型"><span>内置数据类型</span></a></li><li><a class="is-flex toc-item" id="toc-item-引用数据类型" href="#引用数据类型"><span>引用数据类型</span></a></li><li><a class="is-flex toc-item" id="toc-item-常量" href="#常量"><span>常量</span></a></li><li><a class="is-flex toc-item" id="toc-item-自动类型转换" href="#自动类型转换"><span>自动类型转换</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java变量类型" href="#java变量类型"><span>java变量类型</span></a></li><li><a class="is-flex toc-item" id="toc-item-java修饰符" href="#java修饰符"><span>java修饰符</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-访问类修饰符" href="#访问类修饰符"><span>访问类修饰符</span></a></li><li><a class="is-flex toc-item" id="toc-item-非访问类修饰符" href="#非访问类修饰符"><span>非访问类修饰符</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java运算符" href="#java运算符"><span>java运算符</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-位运算符" href="#位运算符"><span>位运算符</span></a></li><li><a class="is-flex toc-item" id="toc-item-三元运算符" href="#三元运算符"><span>三元运算符</span></a></li><li><a class="is-flex toc-item" id="toc-item-instanceof-运算符" href="#instanceof-运算符"><span>instanceof 运算符</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java循环语句" href="#java循环语句"><span>java循环语句</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-while" href="#while"><span>while</span></a></li><li><a class="is-flex toc-item" id="toc-item-for" href="#for"><span>for</span></a></li><li><a class="is-flex toc-item" id="toc-item-break" href="#break"><span>break</span></a></li><li><a class="is-flex toc-item" id="toc-item-continue" href="#continue"><span>continue</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java条件语句" href="#java条件语句"><span>java条件语句</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-if—else" href="#if—else"><span>if—else</span></a></li><li><a class="is-flex toc-item" id="toc-item-switch-case" href="#switch-case"><span>switch case</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-number类和math类" href="#number类和math类"><span>number类和math类</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-包装类" href="#包装类"><span>包装类</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-Character类" href="#Character类"><span>Character类</span></a></li><li><a class="is-flex toc-item" id="toc-item-String类" href="#String类"><span>String类</span></a></li><li><a class="is-flex toc-item" id="toc-item-StringBuffer类和StringBuilder类" href="#StringBuffer类和StringBuilder类"><span>StringBuffer类和StringBuilder类</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-两者区别" href="#两者区别"><span>两者区别</span></a></li></ul></li></ul></div></div><script type="text/javascript" async>
+        $(document).ready(function () { //参考自 https://github.com/ppoffice/hexo-theme-icarus/pull/616/files
+            var observerTopMargin;
+            var scrollObserver;
+            var headerElems = $(".headerlink");
+            var activeTocItem;
+        
+            function initIntersectionObserver(docHeight) {
+                observerTopMargin = docHeight;
+                scrollObserver = new IntersectionObserver(scrollCallBack,
+                    {
+                        root: null,  // viewpoint
+                        rootMargin: docHeight + "px 0px -80% 0px"  // cover top 30% of viewport to the top of document
+                    })
+            }
+        
+            function scrollCallBack(entries, observer) {
+                if ($(window).scrollTop() > observerTopMargin * 0.7) { 
+                    // User somehow scroll to 70% of observerTopMargin (which is inited as 200% document height)
+                    // Observer top margin need to extend to cover all the space to the top of the document
+                    initIntersectionObserver(observerTopMargin * 2)
+                    observer.disconnect();
+                    return;
+                }
+                let toActive;
+                if (entries[0].intersectionRatio == 1) {  // enter viewed area
+                    let entry = entries.reduce((u, v) => (u.target.toc_id > v.target.toc_id ? u : v));  // get the lowest item
+                    toActive = $("#toc-item-" + $(entry.target).attr("href").substr(1));
+                } else {
+                    let entry = entries.reduce((u, v) => (u.target.toc_id < v.target.toc_id ? u : v));  // get the highest item
+                    let idx = Math.max(entry.target.toc_id - 1, 0);
+                    toActive = $("#toc-item-" + $(headerElems[idx]).attr("href").substr(1));
+                }
+                if (activeTocItem) activeTocItem.removeClass("is-current");
+                activeTocItem = toActive
+                activeTocItem.addClass("is-current");
+            }
+        
+            initIntersectionObserver($(document).height() * 2);
+            headerElems.each(function (index, obj) {
+                obj.toc_id = index;
+                scrollObserver.observe(obj);
+            })
+        });</script></div><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="is-rounded" src="/img/avatar.png" alt="时遇诺"></figure><p class="title is-size-4 is-block line-height-inherit">时遇诺</p><p class="is-size-6 is-block">尚未执佩剑，转眼即江湖</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>china</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://weibo.com/u/3050419984" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Weibo" href="https://weibo.com/u/3050419984"><i class="fab fa-weibo"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:removeif@163.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Next" href="https://removeif.github.io/remove.io"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新评论</h3><span class="body_hot_comment">加载中，最新评论有1分钟缓存...</span></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:45:30.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/">JDBC--oracle数据库</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:44:22.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/">javaSE复习3</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:42:58.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/">javaSE复习2</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:38:46.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/">javaSE复习</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-16T12:56:12.000Z">2020-04-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/">数据库初级学习</a></p><p class="is-uppercase"></p></div></article></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/02/"><span class="level-start"><span class="level-item">二月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/01/"><span class="level-start"><span class="level-item">一月 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/12/"><span class="level-start"><span class="level-item">十二月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=removeifFeedsId&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="removeifFeedsId" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="订阅"></div></div><p class="help">输入邮箱开始订阅，更博后邮件通知！</p></form></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="lvv&#039;s blog" height="28"></a><p class="size-small"><span>&copy; 2020 lvv</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">removeif</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            var n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
+        }var now = new Date();setInterval("createTime('2018/11/11 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️感谢 <strong><span id="busuanzi_value_site_uv">99+</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></div></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif"><i class="fab fa-github"></i></a></p></div><div class="sideMusic"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="/js/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><meting-js style="width: auto;height: 2000px;" server="netease" type="playlist" id="2364053447" theme="#2980b9" loop="all" autoplay="false" order="list" storageName="aplayer-setting" lrctype="0" list-max-height="400px" fixed="true"></meting-js></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'http://lvwi.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back-to-top.js" defer></script><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><!--!--><!--!--><!--!--><script src="/js/toc.js" defer></script><script src="/js/main.js" defer></script><script>$.getScript('/js/comment-issue-data.js',function(){loadIssueData('46a9f3481b46ea0129d8','79c7c9cb847e141757d7864453bcbf89f0655b24','时遇诺','blog_comment',false);})</script><link rel="stylesheet" href="/css/insight.css"><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"></div></div></div></div><script>(function (window) {
+            var INSIGHT_CONFIG = {
+                TRANSLATION: {
+                    POSTS: '文章',
+                    PAGES: '页面',
+                    CATEGORIES: '分类',
+                    TAGS: '标签',
+                    UNTITLED: '(无标题)',
+                },
+                CONTENT_URL: '/content.json',
+            };
+            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+        })(window);</script><script src="/js/insight.js" defer></script></body></html>
