@@ -1,870 +1,859 @@
-<!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>lvv&#039;s blog</title><meta description="java,技术分享,后数据库,学习记录,会计,erp"><meta property="og:type" content="website"><meta property="og:title" content="时遇诺"><meta property="og:url" content="https://qiudx.top/"><meta property="og:site_name" content="时遇诺"><meta property="og:description" content="java,技术分享,后数据库,学习记录,会计,erp"><meta property="og:locale" content="zh_CN"><meta property="article:author" content="时遇诺"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://qiudx.top/img/avatar.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://removeif.github.io/"},"headline":"时遇诺","image":["https://removeif.github.io/img/avatar.png"],"author":{"@type":"Person","name":"removeif"},"description":"....."}</script><link rel="alternative" href="/atom.xml" title="lvv&#039;s blog" type="application/atom+xml"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="/css/style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><script src="/js/md5.min.js"></script><link rel="stylesheet" href="/live2d/waifu.css"><script type="text/javascript" async src="/live2d/autoload.js"></script></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="lvv&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/media">影音</a><a class="navbar-item" href="/album">相册</a><a class="navbar-item" href="/friend">友链</a><a class="navbar-item" href="/self-talking">碎碎念</a><a class="navbar-item" href="/message">留言</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card widget">
-            <div class="card-content">
-                <h3 class="menu-label">热门推荐</h3><span id="index_hot_div">加载中，请稍等...</span>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="lvv&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://lvwi.github.io">
+    <!--SEO-->
+
+<meta name="keywords" content="" />
+
+
+<meta name="description" content="" />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    lvv&#39;s blog
+</title>
+
+<link rel="alternate" href="/atom.xml" title="lvv&#39;s blog" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='lvv'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://lvwi.github.io">
+                        lvv&#39;s blog</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/工具/"><i class="fa "></i>
+                                工具</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
-        </div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-04-23T11:45:30.000Z">2020-04-23</time><a class="commentCountImg" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/#comment-container"><span class="display-none-class">8a9f92c53cf5edc1406841649e2c64de</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="8a9f92c53cf5edc1406841649e2c64de"> 99+</span>    </a><span class="level-item">4 分钟 读完 (大约 631 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/">JDBC--oracle数据库</a></h1><div class="content"><blockquote>
-<p>摘要<br>JDBC–oracle数据库</p></div><div class="index-category-tag">  </div><div class="level is-mobile is-flex"><div class="level-start"><div class="level-item"><a class="article-more button is-small size-small link-muted" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/#more"><i class="fas fa-book-reader has-text-grey"> </i>阅读更多&gt;&gt;</a></div></div><div class="level-start"><div class="level-item has-text-grey is-size-7"><time datetime="2020-04-23T11:45:53.661Z"><i class="far fa-calendar-check"> 最后修改: </i>2020-04-23</time></div></div></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-04-23T11:44:22.000Z">2020-04-23</time><a class="commentCountImg" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/#comment-container"><span class="display-none-class">fb8137c1dde55c00b13d1a12151990a6</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="fb8137c1dde55c00b13d1a12151990a6"> 99+</span>    </a><span class="level-item">14 分钟 读完 (大约 2174 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/">javaSE复习3</a></h1><div class="content"><blockquote>
-<p>摘要<br>javaSE复习3</p></div><div class="index-category-tag">  </div><div class="level is-mobile is-flex"><div class="level-start"><div class="level-item"><a class="article-more button is-small size-small link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/#more"><i class="fas fa-book-reader has-text-grey"> </i>阅读更多&gt;&gt;</a></div></div><div class="level-start"><div class="level-item has-text-grey is-size-7"><time datetime="2020-04-23T11:45:05.768Z"><i class="far fa-calendar-check"> 最后修改: </i>2020-04-23</time></div></div></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-04-23T11:42:58.000Z">2020-04-23</time><a class="commentCountImg" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/#comment-container"><span class="display-none-class">81ae7e1ee08c016ac4fcd895a95c7b95</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="81ae7e1ee08c016ac4fcd895a95c7b95"> 99+</span>    </a><span class="level-item">11 分钟 读完 (大约 1652 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/">javaSE复习2</a></h1><div class="content"><blockquote>
-<p>摘要<br>javaSE复习2</p></div><div class="index-category-tag">  </div><div class="level is-mobile is-flex"><div class="level-start"><div class="level-item"><a class="article-more button is-small size-small link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/#more"><i class="fas fa-book-reader has-text-grey"> </i>阅读更多&gt;&gt;</a></div></div><div class="level-start"><div class="level-item has-text-grey is-size-7"><time datetime="2020-04-23T11:44:07.570Z"><i class="far fa-calendar-check"> 最后修改: </i>2020-04-23</time></div></div></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-04-23T11:38:46.000Z">2020-04-23</time><a class="commentCountImg" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/#comment-container"><span class="display-none-class">242e67a33da4c8922cd0da2af968ab52</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="242e67a33da4c8922cd0da2af968ab52"> 99+</span>    </a><span class="level-item">12 分钟 读完 (大约 1863 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/">javaSE复习</a></h1><div class="content"><blockquote>
-<p>摘要<br>javaSE复习-20190416</p></div><div class="index-category-tag">  </div><div class="level is-mobile is-flex"><div class="level-start"><div class="level-item"><a class="article-more button is-small size-small link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/#more"><i class="fas fa-book-reader has-text-grey"> </i>阅读更多&gt;&gt;</a></div></div><div class="level-start"><div class="level-item has-text-grey is-size-7"><time datetime="2020-04-23T11:40:39.975Z"><i class="far fa-calendar-check"> 最后修改: </i>2020-04-23</time></div></div></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-04-16T12:56:12.000Z">2020-04-16</time><a class="commentCountImg" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/#comment-container"><span class="display-none-class">6415b7093269f03f19c81f0d43a940a8</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="6415b7093269f03f19c81f0d43a940a8"> 99+</span>    </a><span class="level-item">9 分钟 读完 (大约 1421 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/">数据库初级学习</a></h1><div class="content"><h3 id="数据库学习-20200415"><a href="#数据库学习-20200415" class="headerlink" title="数据库学习-20200415"></a>数据库学习-20200415</h3><h4 id="plsql开发"><a href="#plsql开发" class="headerlink" title="plsql开发"></a>plsql开发</h4><h5 id="plsql块"><a href="#plsql块" class="headerlink" title="plsql块"></a>plsql块</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">声明部分:DECLARE – 可选部分</span><br><span class="line">变量、常量、游标、用户定义异常声明;</span><br><span class="line">	v_total_sal	NUMBER(9,2) :&#x3D; 0;---:&#x3D;是赋值运算符</span><br><span class="line">	--简单变量</span><br><span class="line">	--复合变量: TABLES: 类似数组</span><br><span class="line">				语法	 TYPE type_name IS TABLE OF scalar_datatype [NOT NULL] INDEX                           BY BINARY_INTEGER;</span><br><span class="line">                      identifier	type_name;</span><br><span class="line"></span><br><span class="line">    		-- RECORDS:由多个组件组成的一种类型.包含一个或几个组件，每个组件称为一个域(FIELD);域的数据类型可以是简单变量类型、另一个RECORD类型或PL&#x2F;SQL的TABLE类型 </span><br><span class="line">	--声明变量类型: %type 参照表中字段设置类型</span><br><span class="line">				新变量   旧字段%type  </span><br><span class="line"></span><br><span class="line">执行体开始部分:BEGIN – 必要部分;</span><br><span class="line">	SQL语句----被sql引擎处理.</span><br><span class="line">	--SELECT select_list INTO	 ariable_name(查询的表的字段) | record_name(定义的变量)</span><br><span class="line">	PL&#x2F;SQL语句----被pl&#x2F;sql引擎处理, 将sql语句传到sql引擎处理</span><br><span class="line">异常处理部分:EXCEPTION – 可选部分;</span><br><span class="line">程序出现异常时，捕捉异常并处理异常</span><br><span class="line">TOO_MANY_ROWS</span><br><span class="line">NO_DATA_FOUND</span><br><span class="line">执行体结束:END; – 必要部分</span><br></pre></td></tr></table></figure>
-
-
-
-<p>plsql块可以嵌套</p>
-<p>外面为父块, 不能获取子块的标识符</p>
-<p>内部为子块,可以获取父块的标识符</p>
-<h5 id="逻辑嵌套"><a href="#逻辑嵌套" class="headerlink" title="逻辑嵌套"></a>逻辑嵌套</h5><blockquote>
-<p>逻辑语句: if</p>
-</blockquote>
-<blockquote>
-<p>嵌套语句: </p>
-<ul>
-<li>使用简单循环重复要执行的语句<br>LOOP<br>statement1;<br>. . .<br>EXIT [WHEN condition];<br>END LOOP;<br>WHEN后面的条件语句就是确定是否退出循环的条件；当条件为TRUE是，退出循环。当条件为FALSE时，继续循环<br>必须使用EXIT语句退出循环，如果没有EXIT语句，将会无限循环下去</li>
-<li>使用FOR循环，循环执行指定的次数<br>FOR index in [REVERSE]  –REVERSE是反转的意思，正常的循环计数器从小到大,使用REVERSE将使计数器从大到小递减<pre><code>lower_bound..upper_bound LOOP  </code></pre>statement1;<br>. . .<br>END LOOP;</li>
-<li>使用WHILE 循环，只要条件满足就执行循环：<br>WHILE condition LOOP<br>statement1;<br>statement2;<br>. . .<br>END LOOP;</li>
-</ul>
-</blockquote>
-<h5 id="sql游标"><a href="#sql游标" class="headerlink" title="sql游标"></a>sql游标</h5><p>游标是一段私有的SQL 工作区,也就是一段内存区域,用于暂时存放受SQL语句影响到的数据</p>
-<p>隐式 显示</p>
-<blockquote>
-<p>游标属性包括四种，<br>%ROWCOUNT    受SQL影响的行数<br>%FOUND        Boolean 值，是否还有数据<br>%NOTFOUND     Boolean 值，是否已无数据<br>%ISOPEN        游标是否打开<br>显示游标和隐式游标都有这四种属性。但是使用方法和含义却不相同。<br>在使用游标的时候，需要使用游标名称作为前缀。但是隐式游标没有名称，所以在使用隐式游标的时候采取统一的一个名称SQL。<br>SQL%ROWCOUNT    受SQL影响的行数<br>SQL%FOUND        Boolean 值，是否还有数据<br>SQL%NOTFOUND                   Boolean 值，是否已无数据<br>SQL%ISOPEN        总是为FALSE</p>
-</blockquote>
-<blockquote>
-<p>游标的作用</p>
-<p>可以用于暂存查询取出的多行结果，然后一行一行的处理<br>显示游标就是专门用来查询多条数据的<br>按行处理查询返回的多行结果<br>显示游标首先将查询出的多行数据暂存在游标区域中,然后在PL/SQL中借助于循环语句手动的控制游标的多行操作,每次取出一条进行处理,直到取出游标中所有的数据为止</p>
-</blockquote>
-<blockquote>
-<p>声明游标</p>
-<p>DECLARE<br>CURSOR cursor_name IS<br>  select_statement;<br>begin  </p>
-</blockquote>
-<h5 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h5><p>捕获异常: 在exception中捕获, 不往下传递</p>
-<p>传播异常:未在exception中捕获, 异常会传播给调用环境</p>
-<ul>
-<li>语法</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">EXCEPTION</span><br><span class="line">  WHEN exception1 [OR exception2 . . .] THEN</span><br><span class="line">    statement1;</span><br><span class="line">    . . .</span><br><span class="line">  [WHEN exception3 [OR exception4 . . .] THEN</span><br><span class="line">    statement1;</span><br><span class="line">    . . .]</span><br><span class="line">  [WHEN OTHERS THEN</span><br><span class="line">    statement1;</span><br><span class="line">    . . .]</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>异常的种类</li>
-</ul>
-<blockquote>
-<p>预定义的oracle 数据库错误<br>非预定义的oracle 数据库错误<br>用户定义的错误</p>
-<p><img src="./images/%E6%8D%95%E8%8E%B7%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8.jpg" alt=""></p>
-</blockquote>
-<ul>
-<li>异常捕获的相关函数</li>
-</ul>
-<p>在when others中,将报错赋值到以下两个代码中,并写到日志里 </p>
-<p>SQLCODE 返回错误代码，NUMBER类型<br> SQLERRM  返回与错误代码关联的消息；VARCHAR2类型</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">DECLARE</span><br><span class="line">V_CODE ERR_LOG.CODE%TYPE;   </span><br><span class="line">V_MESSAGE ERR_LOG.MESSAGE%TYPE;</span><br><span class="line">BEGIN</span><br><span class="line">INSERT INTO TEST VALUES (1,&#39;AAA&#39;,3000);</span><br><span class="line">INSERT INTO TEST VALUES (1,NULL,NULL);   </span><br><span class="line">EXCEPTION</span><br><span class="line">WHEN OTHERS THEN </span><br><span class="line">V_CODE :&#x3D; SQLCODE;  </span><br><span class="line">V_MESSAGE :&#x3D; SQLERRM;   </span><br><span class="line">INSERT INTO ERR_LOG VALUES (V_CODE,V_MESSAGE);    </span><br><span class="line">COMMIT;</span><br><span class="line">DBMS_OUTPUT.put_line(&#39;发生异常&#39;);</span><br><span class="line">END;</span><br></pre></td></tr></table></figure>
-
-<h5 id="plsql的程序单元"><a href="#plsql的程序单元" class="headerlink" title="plsql的程序单元"></a>plsql的程序单元</h5><blockquote>
-<p> PL/SQL程序,也叫PL/SQL程序单元,是数据库中命名的PL/SQL 块<br> 主要有四类：<br> 过程    执行特定操作<br> 函数    进行复杂计算,返回计算的结果<br> 包        将逻辑上相关的过程和函数组织在一起</p>
-<p> ​        是由存储在一起的相关对象组成的PL/SQL存储程序组(是一组过程，函数，变量，常量的集合)    </p>
-<p> 触发器    事件触发，执行相应操作</p>
-</blockquote>
-<p>过程: </p>
-<p>用CREATE  OR REPLACE开始创建</p>
-<p>name</p>
-<p><img src="./images/plsql%E5%9D%97%E7%B1%BB%E5%9E%8B.jpg" alt=""></p>
-<p>创建后用 exec调用</p>
-<p>exec name</p>
-<hr>
-<p>触发器主要用于下列情况：</p>
-<blockquote>
-<p>安全性方面，确定用户的操作是否可以继续执行<br>产生对数据值修改的审计，将修改的信息记录下来，产生数据改动记录<br>提供更灵活的完整性校验规则，能根据复杂的规则校验数据<br>提供表数据的同步复制，使多个表的数据同步<br>事件日志记录，记录数据库的重要操作</p>
-</blockquote>
-<p>DML触发器<br> 系统触发器</p>
-<p>启用或者禁用某个触发器<br>ALTER TRIGGER trigger_name  DISABLE | ENABLE</p>
-<p>启用或者禁用某个对象上的所有触发器<br>ALTER TABLE table_name   DISABLE | ENABLE  ALL TRIGGERS</p>
-<p>重编译触发器<br>ALTER TRIGGER trigger_name COMPILE</p>
-</div><div class="index-category-tag">  </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-04-14T12:42:49.000Z">2020-04-14</time><a class="commentCountImg" href="/2020/04/14/erp%E5%AD%A6%E4%B9%A0-0/#comment-container"><span class="display-none-class">c148efb539fcd0a5ea2e108dd8b2d50d</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="c148efb539fcd0a5ea2e108dd8b2d50d"> 99+</span>    </a><span class="level-item">14 分钟 读完 (大约 2070 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/04/14/erp%E5%AD%A6%E4%B9%A0-0/">erp学习</a></h1><div class="content"><h2 id="ERP学习"><a href="#ERP学习" class="headerlink" title="ERP学习"></a>ERP学习</h2><h3 id="plsql"><a href="#plsql" class="headerlink" title="plsql"></a>plsql</h3><ol>
-<li><p>plsql连接oracle数据库</p>
-<p>待补充</p>
-<blockquote>
-<p>报错:ORA-12425</p>
-</blockquote>
-</li>
-<li><p>plsql快捷键</p>
-<ul>
-<li><p>输入完语句后, 点左上角齿轮执行(注:不选中需要执行的语句将,执行全部语句), 或者F8 快捷键</p>
-</li>
-<li><p>查询结果界面的绿色双箭头加横杠,可以显示全部的查询结果</p>
-</li>
-<li><p>ctrl+鼠标点击查询语句中的表名, 可以查看表结构</p>
-</li>
-<li><p>语句注释快捷键</p>
-</li>
-<li><p>对查询结果的各类操作(暂不需要)</p>
-<ul>
-<li>增删改: 在select语句中加 for update ,然后在表格中操作</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>点击查询结果表格的左上角,右击选择复制到excel中,可以导 </li>
-</ul>
-<p>包括空值的任何算术表达式都等于空<br>包括空值的连接表达式等于与空字符 串连接，也就是原来的字符串</p>
-<p>字段别名用双引号</p>
-<p>日期和字符型文本字符串必须用单引号扩起来</p>
-<h4 id="sql函数"><a href="#sql函数" class="headerlink" title="sql函数"></a>sql函数</h4><p>单行函数</p>
-<p>多行函数:</p>
-<p>–分组函数 : 分组函省略列中的空值</p>
-<p>在分组函数中使用NVL函数 , NVL函数迫使分组函数包括空值</p>
-<p>COUNT函数是用于计算符合条件的数据的条数的。COUNT有两种用法：<br>    COUNT(<em>) 和 COUNT(字段)，并且结果可能不同。COUNT(</em>)求出所有符<br>   合条件的记录条数；而COUNT(字段)这是求出所有符合条件并且字段值是<br>   非空的记录数</p>
-<p>Count(distinct(expr))返回不重复的，非空值的数量</p>
-<p>不能在 WHERE 子句中出现组函数.</p>
-<p>组函数可以出现在查询列表中，或者GROUP BY 子句中对组的过滤不能出现在WHERE子句中，而是要使用查询语句的另一个子句：HAVING 来补充where; 通过having进行组函数的过滤</p>
-<p>组函数最多嵌套两层<br>如果使用组函数的查询没有GROUP BY 子句，那么组函数不能嵌套</p>
-<h4 id="多表查询"><a href="#多表查询" class="headerlink" title="多表查询"></a>多表查询</h4><h5 id="连接分类"><a href="#连接分类" class="headerlink" title="连接分类"></a>连接分类</h5><p>等值连接:用等号建立等值关系, 如:表1的字段1=表2的字段2</p>
-<p>非等值连接:连接的关系可能是大于，小于，不等于或其他非等于的关系。非等值连接的操作符可以是：&gt; ,&lt;,&lt;&gt;,&gt;=,&lt;=,也可以是BETWEEN…AND,或者IN,LIKE</p>
-<p>外连接</p>
-<p>左外连接  where 表1.字段(+)=表2.字段, 表2的数据全部显示</p>
-<p>右外链接</p>
-<p>自连接</p>
-<blockquote>
-<blockquote>
-<p>9i的新连接标准</p>
-</blockquote>
-</blockquote>
-<p>where 表1 [xxx  join 表2]</p>
-<p>xxx=以下的数据:</p>
-<p>CROSS JOIN 表示产生交叉集合，也就是笛卡尔乘积的结果集合<br>NATURAL JOIN 表示自然连接 : 基于两个表中列名完全相同的一个或多个列产生等值连接</p>
-<p>JOIN … USING(字段名)表示使用指定的字段作自然连接<br>INNER JOIN … ON (连接表达式)表示根据连接表达式构建多表连接<br>LEFT|RIGHT|FULL OUTER JOIN… ON (连接表达式)表示<br>     左/右/全外连接</p>
-<p>在LEFT OUTER JOIN…ON(表达式) 表示左外连接，会返回所有左边表中的行，即使在右边的表中没有可对应的列值</p>
-<h5 id="联合查询UNION"><a href="#联合查询UNION" class="headerlink" title="联合查询UNION"></a>联合查询UNION</h5><p>在数据库中，UNION和UNION ALL关键字都是将两个结果集合并为一个 .最常见的是过程表与历史表UNION </p>
-<p>UNION在进行表链接后会筛选掉重复的记录，所以在表链接后会对所产生的结果集进行排序运算，删除重复的记录再返回结果。</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> DEPT </span><br><span class="line"><span class="keyword">UNION</span> </span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> DEPT_D;</span><br></pre></td></tr></table></figure>
-
-<p>而UNION ALL只是简单的将两个结果合并后就返回。这样，如果返回的两个结果集中有重复的数据，那么返回的结果集就会包含重复的数据了</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> DEPT </span><br><span class="line"><span class="keyword">UNION</span> <span class="keyword">ALL</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> DEPT_D</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h4><p>为了给主查询（外部查询）提供数据而首先执行的查询（内部查询）称为子查询<br>子查询在主查询前执行一次<br>主查询使用子查询的结果</p>
-<p>使用子查询的注意事项</p>
-<pre><code>* 子查询要用括号括起来
-* 将子查询放在比较运算符的右边(增强可读性)
-* 在Oracle8i之前的版本中，子查询不能包含Order by子句
-* 只有在执行Top-N分析时，子查询中才需要使用Order by子句
-* 对单行子查询使用单行运算符
-* 对多行子查询使用多行运算符</code></pre><hr>
-<h4 id="数据库的事务"><a href="#数据库的事务" class="headerlink" title="数据库的事务"></a>数据库的事务</h4><h5 id="事务的组成"><a href="#事务的组成" class="headerlink" title="事务的组成"></a>事务的组成</h5><p>Oracle数据库的事务由下列语句组成：<br>一组DML语句，修改的数据在他们中保持一致<br>一个 DDL (Data Define Language) 语句<br>一个 DCL (Data Control Language)语句</p>
-<h5 id="事务的特性"><a href="#事务的特性" class="headerlink" title="事务的特性"></a>事务的特性</h5><p>事务处理的ACID特性<br>   Atomic:原子性,                            Consistent:一致性,<br>   Isolated:隔离性,                           Durable:永久性 </p>
-<p>++++</p>
-<h4 id="数据库对象"><a href="#数据库对象" class="headerlink" title="数据库对象"></a>数据库对象</h4><table>
-<thead>
-<tr>
-<th>对象名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>表</td>
-<td>基本的数据存储对象，以行和列的形式存在</td>
-</tr>
-<tr>
-<td>约束</td>
-<td>执行数据校验，保证数据完整性的对象;约束是在表上强制执行的数据校验规则</td>
-</tr>
-<tr>
-<td>视图</td>
-<td>一个或多个表数据的显示</td>
-</tr>
-<tr>
-<td>索引</td>
-<td>用于提高查询的速度</td>
-</tr>
-<tr>
-<td>同义词</td>
-<td>表的别名</td>
-</tr>
-</tbody></table>
-<h5 id="删除表数据"><a href="#删除表数据" class="headerlink" title="删除表数据"></a>删除表数据</h5><ul>
-<li><p>在删除数据的时候，可以使用DELETE语句，但是效率不高。可以使用TRUNCATE命令来删除数据</p>
-</li>
-<li><p>TRUNCATE TABLE 语句</p>
-<blockquote>
-<p>清除表中所有的记录<br>是DDL语句，不可以回滚，而DELETE语句可以ROLLBACK<br>释放表的存储空间,DELETE命令不释放空间</p>
-</blockquote>
-</li>
-<li><p>是删除数据的方法之一</p>
-</li>
-<li><p>语法：TRUNCATE TABLE table_name;</p>
-<pre><code>TRUNCATE TABLE DEPT_BACK;</code></pre></li>
-</ul>
-<p>++++</p>
-<h5 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h5><ul>
-<li>表中所有数据将被删除</li>
-<li>没有完成的事务被提交</li>
-<li>所有相关的索引被删除</li>
-<li>不能回退</li>
-<li>语法：DROP TABLE table_name;<pre><code>DROP TABLE DEPT_BACK;</code></pre></li>
-</ul>
-<h3 id="oracle数据库"><a href="#oracle数据库" class="headerlink" title="oracle数据库"></a>oracle数据库</h3><h4 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h4><blockquote>
-<p>用户所涉及的数据库结构: 由一个或多个表空间,数据库模式对象</p>
-<p>表空间包含多个数据文件</p>
-<p>必有SYSTEM表空间</p>
-<p>段: 数据段, 索引段,回滚段,临时段</p>
-<p>块–&gt;区—&gt;段—&gt;表空间</p>
-</blockquote>
-<h4 id="物理结构"><a href="#物理结构" class="headerlink" title="物理结构"></a>物理结构</h4><blockquote>
-<p>由操作系统文件决定: 数据文件,日志文件,控制文件</p>
-</blockquote>
-<h4 id="模式和模式对象"><a href="#模式和模式对象" class="headerlink" title="模式和模式对象"></a>模式和模式对象</h4><blockquote>
-<p>表, 视图,索引,聚集,程序单元:储存过程,函数和包</p>
-</blockquote>
-<h4 id="数据库权限"><a href="#数据库权限" class="headerlink" title="数据库权限"></a>数据库权限</h4><p> 用户权限: 系统权限, 对象权限</p>
-<blockquote>
-<ul>
-<li><p>关键字</p>
-<ul>
-<li>候选关键字</li>
-<li>主键 </li>
-<li>外键  表a ,表b , 公共关键字为 键1, 而1又是a的主键, 那么1就是b的外键</li>
-<li>公共关键字      </li>
-</ul>
-</li>
-<li><p>范式</p>
-<ul>
-<li>第一范式: 无重复的列</li>
-<li>第二范式:主键作为唯一区别,其他属性完全依赖主键</li>
-<li>第三范式:每个非主属性都不传递依赖于关系模型的候选键</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>表格中弹性域存在的意义: 备用字段</p>
-<p>? 若备用字段不足如何添加</p>
-</blockquote>
-<blockquote>
-</blockquote>
-<h3 id="oracle-server"><a href="#oracle-server" class="headerlink" title="oracle  server"></a>oracle  server</h3><p>一个运行着的数据库就是oracle server , 是由db+instance(实例)组成的</p>
-<h4 id="oracle实例"><a href="#oracle实例" class="headerlink" title="oracle实例"></a>oracle实例</h4><blockquote>
-<p>实例的组成: 由分配的内存区+多个后台进程</p>
-<p>​                    内存区: 启动数据库是被分配的系统全局区的一个内存区</p>
-<p>实例的作用: 管理数据库的数据, 是存取和控制数据库的软件机制</p>
-</blockquote>
-<h4 id="oracle进程"><a href="#oracle进程" class="headerlink" title="oracle进程"></a>oracle进程</h4><blockquote>
-<p>用户进程–用户用客户端的sql工具连接数据库</p>
-<p>服务器进程–处理连接到该实例的用户进程</p>
-<p>后台进程–多进程系统中的附加进程    (DBWR,LGWR,CKPT,SMON,PMON,ARCH,RECO)</p>
-<ul>
-<li>DBWR:将缓冲区写入数据文件, 使缓冲区变为未使用状态</li>
-<li>LGWR:将日志缓冲区写入磁盘上的一个日志文件</li>
-<li>CKPT:当该进程被唤醒执行时, 对全部数据文件的标题进行修改,指示该检查点,并通知DBWR将脏数据块写入数据文件</li>
-<li>…</li>
-</ul>
-</blockquote>
-<h4 id="oracle内存结构"><a href="#oracle内存结构" class="headerlink" title="oracle内存结构"></a>oracle内存结构</h4><blockquote>
-<p>软件代码区: 储存正在执行或可执行的程序代码</p>
-<p>系统全局区,包括数据缓冲储存区,日志缓冲区,共享池 : </p>
-<p>程序全局区,包括栈区和数据区</p>
-<p>排序区</p>
-</blockquote>
-</div><div class="index-category-tag">  </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-02-13T07:16:23.528Z">2020-02-13</time><a class="commentCountImg" href="/2020/02/13/hexo%E4%B8%BB%E9%A2%98%E5%88%9B%E5%BB%BA%E5%AD%A6%E4%B9%A0/#comment-container"><span class="display-none-class">18489c15a540379abdc9f2c84a22dfc9</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="18489c15a540379abdc9f2c84a22dfc9"> 99+</span>    </a><span class="level-item">23 分钟 读完 (大约 3416 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/02/13/hexo%E4%B8%BB%E9%A2%98%E5%88%9B%E5%BB%BA%E5%AD%A6%E4%B9%A0/">hexo主题创建学习</a></h1><div class="content"><h2 id="hexo主题创建学习-20200119"><a href="#hexo主题创建学习-20200119" class="headerlink" title="hexo主题创建学习-20200119"></a>hexo主题创建学习-20200119</h2><h3 id="一-创建blog"><a href="#一-创建blog" class="headerlink" title="一.  创建blog"></a>一.  创建blog</h3><pre><code>&gt; 1. hexo是什么
-&gt;
-&gt;    Hexo 是一款能将Markdown文件编译成html 静态文件，可以提供 Web服务，做Blog，使其能部署到github等等
-&gt;
-&gt;    因为hexo正常情况下不需要部署到服务器, 服务器上保存的时候markdown写的文章,以及hexo生成的html页面
-&gt;
-&gt;    所以hexo是个静态页面生成、上传的工具
-&gt;
-&gt; 2. 因为hexo基于node.js制作的, 所以要安装node.js
-&gt;
-&gt; 3. 安装hexo  ``` $ sudo npm install -g hexo-cli```     sudo为了给root权限,读取系统配置文件
-&gt;
-&gt; 4. 测试是否安装完成 ```$ hexo -v```
-&gt;
-&gt; 5. 新建blog  
-&gt;
-&gt;    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir .&#x2F;hexo-blog</span><br><span class="line">$ cd .&#x2F;hexo-blog</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
-&gt;
-&gt; 6. 启动blog  ```$ hexo s```
-&gt;
-&gt; 7. 主题下载</code></pre><h3 id="二-主题开发"><a href="#二-主题开发" class="headerlink" title="二. 主题开发"></a>二. 主题开发</h3><h4 id="1-创建博客-myblog"><a href="#1-创建博客-myblog" class="headerlink" title="1.  创建博客-myblog"></a>1.  创建博客-myblog</h4><h4 id="2-blog的目录"><a href="#2-blog的目录" class="headerlink" title="2.  blog的目录"></a>2.  blog的目录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">myblog ➔  tree -L 1</span><br><span class="line">.</span><br><span class="line">├── _config.yml       &#x2F;&#x2F; 总体的配置文件---可以修改themes名称</span><br><span class="line">├── node_modules      &#x2F;&#x2F; NodeJs 所依赖的包，后期也可以自己添加插件</span><br><span class="line">├── package-lock.json &#x2F;&#x2F; 支持 hexo 运行的 NodeJs 包</span><br><span class="line">├── package.json      &#x2F;&#x2F; 自定义的 NodeJs 包</span><br><span class="line">├── scaffolds         &#x2F;&#x2F; Hexo Markdown 加载时的关键字，如data,title等,它会在启动的时候默认加载</span><br><span class="line">├── source            &#x2F;&#x2F; md 源文件目录</span><br><span class="line">├── public            &#x2F;&#x2F; 在运行语句 hexo generade 自动生成html格式的静态文件组</span><br><span class="line">└── themes            &#x2F;&#x2F; 主题文件夹</span><br><span class="line">    └── landscape     &#x2F;&#x2F; 默认主题</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-创建主题mythemes"><a href="#3-创建主题mythemes" class="headerlink" title="3.  创建主题mythemes"></a>3.  创建主题mythemes</h4><p>目录结构如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">└── themes                            </span><br><span class="line">    ├── landscape</span><br><span class="line">    └── mythemes            &#x2F;&#x2F; 自建的主题目录</span><br><span class="line">        ├── _config.yml     &#x2F;&#x2F; 主题配置文件</span><br><span class="line">        ├── layout          &#x2F;&#x2F; 主要构造 html 的模板</span><br><span class="line">        │   ├── index.ejs   &#x2F;&#x2F; 主页模板</span><br><span class="line">        │   ├── layout.ejs  &#x2F;&#x2F; 布局模板</span><br><span class="line">        │   └── post.ejs    &#x2F;&#x2F; md 编译成 html 后的文件模板</span><br><span class="line">        └── source          &#x2F;&#x2F; 静态资源文件目录</span><br><span class="line">            ├── css         &#x2F;&#x2F; css 样式目录</span><br><span class="line">            └── js          &#x2F;&#x2F; JavaScript 脚本目录</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="4-模板介绍"><a href="#4-模板介绍" class="headerlink" title="4.  模板介绍"></a>4.  模板介绍</h4><h5 id="1-3个ejs模板"><a href="#1-3个ejs模板" class="headerlink" title="(1) . 3个ejs模板"></a>(1) . 3个ejs模板</h5><p>layout.ejs —添加内容可以在blog中默认显示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">添加语句 让idnex.ejs和post.ejs内容显示</span><br><span class="line">    &lt;%- include(&quot;index.ejs&quot;) %&gt;</span><br><span class="line">    &lt;%- include(&quot;post.ejs&quot;) %&gt;</span><br></pre></td></tr></table></figure>
-
-<p>index.ejs–不默认显示</p>
-<p>post.ejs–不默认显示</p>
-<h5 id="2-EJS-标签简介"><a href="#2-EJS-标签简介" class="headerlink" title="(2). EJS 标签简介"></a>(2). EJS 标签简介</h5><p>​    简介, 详见<a href="https://ejs.bootcss.com/">ejs学习</a></p>
-<blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">标签</th>
-<th align="left">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">&lt;%  %&gt;</td>
-<td align="left">脚本标签，用于流程控制, 不会显示</td>
-</tr>
-<tr>
-<td align="left">&lt;%_</td>
-<td align="left">删除前面的空格符</td>
-</tr>
-<tr>
-<td align="left">&lt;%=</td>
-<td align="left">输出数据到模板</td>
-</tr>
-<tr>
-<td align="left">&lt;%-</td>
-<td align="left">输出非转义数据到模板</td>
-</tr>
-<tr>
-<td align="left">&lt;%#</td>
-<td align="left">注释</td>
-</tr>
-<tr>
-<td align="left">&lt;%%</td>
-<td align="left">输出字符串『&lt;%』</td>
-</tr>
-<tr>
-<td align="left">&gt;%</td>
-<td align="left">脚本结束标签</td>
-</tr>
-<tr>
-<td align="left">-%&gt;</td>
-<td align="left">结束时，删除换行符</td>
-</tr>
-<tr>
-<td align="left">_%&gt;</td>
-<td align="left">结束时，删除空格符</td>
-</tr>
-<tr>
-<td align="left">&lt;%- include(“index.ejs”) %&gt;</td>
-<td align="left">引入其他模板</td>
-</tr>
-</tbody></table>
-</blockquote>
-<h5 id="3-hexo变量"><a href="#3-hexo变量" class="headerlink" title="(3). hexo变量"></a>(3). hexo变量</h5><p><a href="https://hexo.io/zh-cn/docs/variables">hexo-api</a>, 根据它提供的变量api获取页面信息,进行blog开发</p>
-<blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">变量</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">site</td>
-<td align="left">总体变量，几乎都是从这里开始的</td>
-</tr>
-<tr>
-<td align="left">site.posts</td>
-<td align="left">所有文章</td>
-</tr>
-<tr>
-<td align="left">site.posts[0].path</td>
-<td align="left">文章路径，带日期的</td>
-</tr>
-<tr>
-<td align="left">site.posts[0].slug</td>
-<td align="left">文章路径，根据项目文件夹的路径来的</td>
-</tr>
-<tr>
-<td align="left">site.posts[0]._id</td>
-<td align="left">文章的唯一 id，后面会用于 active 对比</td>
-</tr>
-<tr>
-<td align="left">site.posts[0].title</td>
-<td align="left">文章的标题</td>
-</tr>
-<tr>
-<td align="left">site.posts[0].date</td>
-<td align="left">文章的时间</td>
-</tr>
-<tr>
-<td align="left">page.date</td>
-<td align="left">在直接访问文章路径下，文章的时间</td>
-</tr>
-<tr>
-<td align="left">page.title</td>
-<td align="left">在直接访问文章路径下，文章的标题</td>
-</tr>
-<tr>
-<td align="left">page._id</td>
-<td align="left">在直接访问文章路径下，文章的的唯一 id，后面会用于 active 对比</td>
-</tr>
-<tr>
-<td align="left">page.content</td>
-<td align="left">引入对应文章的正文</td>
-</tr>
-<tr>
-<td align="left">config.xxx</td>
-<td align="left">总体配置文件的引用 _config.yml</td>
-</tr>
-<tr>
-<td align="left">theme.xxx</td>
-<td align="left">主题配置文件 theme._config.yml</td>
-</tr>
-<tr>
-<td align="left">&lt;%- body %&gt;</td>
-<td align="left">同时引入 post.ejs 和 index.ejs</td>
-</tr>
-<tr>
-<td align="left">&lt;%- css(path, …) %&gt;</td>
-<td align="left">引入 css 文件</td>
-</tr>
-<tr>
-<td align="left">&lt;%- js(path, …) %&gt;</td>
-<td align="left">引入 js 文件</td>
-</tr>
-</tbody></table>
-</blockquote>
-<h6 id="语句的简单应用"><a href="#语句的简单应用" class="headerlink" title="语句的简单应用"></a>语句的简单应用</h6><p>layout.ejs</p>
-<blockquote>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&gt;&lt;!DOCTYPE html&gt;</span><br><span class="line"> &lt;html&gt;</span><br><span class="line">&gt;&lt;head&gt;</span><br><span class="line">     &lt;title&gt;&lt;&#x2F;title&gt;</span><br><span class="line">     &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line"> &lt;&#x2F;head&gt;</span><br><span class="line"> &lt;body&gt;</span><br><span class="line">     这里是 layout.ejs</span><br><span class="line">     &lt;%- include(&quot;index.ejs&quot;) %&gt;</span><br><span class="line">     &lt;%- include(&quot;post.ejs&quot;) %&gt;</span><br><span class="line">     &lt;!-- 一般在写逻辑的时候会用到这个标签，这个标签不会输出到页面上 --&gt;</span><br><span class="line">     &lt;%  %&gt;</span><br><span class="line">     &lt;!-- 这个标签会输出到页面上，是带着非转义符号的 --&gt;</span><br><span class="line">     &lt;% </span><br><span class="line">         var test &#x3D; &quot;基本上，就用这两组标签，其他的也用不上。&quot;;</span><br><span class="line">     %&gt;</span><br><span class="line">     &lt;%- test %&gt;</span><br><span class="line">     &lt;br &#x2F;&gt;</span><br><span class="line">     &lt;% site.posts.forEach(function(post)&#123; %&gt;</span><br><span class="line">         &lt;%- post.path %&gt;</span><br><span class="line">         &lt;br &#x2F;&gt;</span><br><span class="line">       &lt;%- post.slug %&gt;</span><br><span class="line">         &lt;br &#x2F;&gt;</span><br><span class="line">       &lt;%- post._id %&gt;</span><br><span class="line">         &lt;br &#x2F;&gt;</span><br><span class="line">       &lt;%- post.title %&gt;</span><br><span class="line">         &lt;br &#x2F;&gt;</span><br><span class="line">         &lt;%- post.date %&gt;</span><br><span class="line">         &lt;br &#x2F;&gt;</span><br><span class="line">         &lt;a href&#x3D;&quot;&#x2F;&lt;%- post.path %&gt;&quot;&gt;&lt;%- post.title %&gt;&lt;&#x2F;a&gt;</span><br><span class="line">     &lt;% &#125;); %&gt;  </span><br><span class="line"> ![](https:&#x2F;&#x2F;img2018.cnblogs.com&#x2F;blog&#x2F;626593&#x2F;201906&#x2F;626593-20190620152507609-296007299.png)</span><br><span class="line">   &lt;%- body %&gt;</span><br><span class="line"> &lt;&#x2F;body&gt;</span><br><span class="line"> &lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-
-<p> 输出页面</p>
-<p> <img src="images/%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B91.png" alt="图片"></p>
-</blockquote>
-<h3 id="三-主题制作"><a href="#三-主题制作" class="headerlink" title="三 .主题制作"></a>三 .主题制作</h3><h4 id="1-布局—以我想要的效果为例"><a href="#1-布局—以我想要的效果为例" class="headerlink" title="1. 布局—以我想要的效果为例"></a>1. 布局—以我想要的效果为例</h4><p><img src="images/%E4%B8%BB%E4%BD%93%E6%A1%86%E6%9E%B6.jpg" alt="框架"></p>
-<h4 id="2-文件结构"><a href="#2-文件结构" class="headerlink" title="2. 文件结构"></a>2. 文件结构</h4><p>新建静态资源文件，并且放一下测试的 md 文件进 _posts 中。主要添加了 theme.mythemes.source 中的静态资源和布局用的 ejs</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">...</span><br><span class="line">├── source</span><br><span class="line">│   └── _posts</span><br><span class="line">│       └── test-hello-world.md</span><br><span class="line">	└── about</span><br><span class="line">	└── archives</span><br><span class="line">└── themes</span><br><span class="line">    ├── landscape</span><br><span class="line">    └── mythemes</span><br><span class="line">        ├── _config.yml</span><br><span class="line">        ├── layout</span><br><span class="line">        │   ├── asideleft.ejs   &#x2F;&#x2F; 用于左侧边栏</span><br><span class="line">        │   ├── index.ejs   &#x2F;&#x2F; 用于主页</span><br><span class="line">        │   ├── layout.ejs  &#x2F;&#x2F; 用于布局</span><br><span class="line">        │   ├── nav.ejs     &#x2F;&#x2F; 用于导航</span><br><span class="line">        |	├── asideright.ejs   &#x2F;&#x2F; 用于右侧边栏</span><br><span class="line">        │   └── post.ejs    &#x2F;&#x2F; 用于文章   </span><br><span class="line">        └── source</span><br><span class="line">            ├── css</span><br><span class="line">            │   └── main.css</span><br><span class="line">            ├── js</span><br><span class="line">            │   └── main.js</span><br><span class="line">            └── lib          &#x2F;&#x2F;想要有树状结构的侧边栏，给目录、文件、以及搜索框增加图标，需要外部的图片库</span><br><span class="line">              └── font-awesome &#x2F;&#x2F; 下载好的文字图片库</span><br><span class="line">              	├── css</span><br><span class="line">             	├── fonts</span><br><span class="line">              	├── less</span><br><span class="line">              	└── scss</span><br><span class="line">              └── highlight</span><br><span class="line">              └── jquery-3.4.1.min.js</span><br><span class="line">              └── jquery.pjax.js</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-文件配置需添加的内容"><a href="#3-文件配置需添加的内容" class="headerlink" title="3. 文件配置需添加的内容"></a>3. 文件配置需添加的内容</h4><h5 id="1-主题配置文件"><a href="#1-主题配置文件" class="headerlink" title="(1)主题配置文件"></a>(1)主题配置文件</h5><p>theme._config.yml  </p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">遇见你是最美好的时刻</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">时遇</span></span><br><span class="line"><span class="attr">menus:</span> </span><br><span class="line">  <span class="string">主页:</span> <span class="string">/</span></span><br><span class="line">  <span class="string">关于:</span> <span class="string">/about</span></span><br><span class="line">  <span class="string">分类:</span> <span class="string">/archives</span></span><br><span class="line"><span class="attr">links:</span></span><br><span class="line">  <span class="attr">github:</span> <span class="string">https://github.com</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="2-主布局文件-layout-ejs"><a href="#2-主布局文件-layout-ejs" class="headerlink" title="(2)主布局文件 layout.ejs"></a>(2)主布局文件 layout.ejs</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;&lt;%- theme.title %&gt;&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;!-- 引入配置文件 --&gt;</span><br><span class="line">    &lt;%- css(&#39;css&#x2F;main.css&#39;) %&gt;  </span><br><span class="line">    &lt;!-- 字体图片库 --&gt;</span><br><span class="line">    &lt;%- css(&#39;lib&#x2F;font-awesome&#x2F;css&#x2F;font-awesome.min.css&#39;) %&gt;</span><br><span class="line">      &lt;!-- 代码高亮库 --&gt;</span><br><span class="line">    &lt;%- css(&#39;&#x2F;lib&#x2F;highlight&#x2F;styles&#x2F;下载的主题&#39;) %&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;main&quot;&gt;</span><br><span class="line">        &lt;!-- 引入侧边栏 --&gt;</span><br><span class="line">        &lt;!-- 左右侧边栏的问题</span><br><span class="line">			利用div的清除浮动: float:left 实现</span><br><span class="line">		--&gt;</span><br><span class="line">        &lt;aside id&#x3D;&quot;#aside&quot;&gt;</span><br><span class="line">            &lt;%- include(&#39;aside.ejs&#39;) %&gt;</span><br><span class="line">        &lt;&#x2F;aside&gt;</span><br><span class="line">        &lt;!-- 引入导航 --&gt;</span><br><span class="line">        &lt;nav&gt;</span><br><span class="line">            &lt;%- include(&#39;nav.ejs&#39;) %&gt;</span><br><span class="line">        &lt;&#x2F;nav&gt;</span><br><span class="line">        &lt;!-- 引入正文 --&gt;</span><br><span class="line">        &lt;div id&#x3D;&quot;content&quot;&gt;</span><br><span class="line">      &lt;%- body %&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;        </span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;!-- 引入 jquery --&gt;</span><br><span class="line">    &lt;%- js(&#39;&#x2F;lib&#x2F;jquery-3.4.1.min.js&#39;) %&gt;</span><br><span class="line">     &lt;!-- 引入 pjax --&gt;</span><br><span class="line">    &lt;%- js(&#39;&#x2F;lib&#x2F;jquery.pjax.js&#39;) %&gt;</span><br><span class="line">    &lt;!-- 引入 js 文件 --&gt;</span><br><span class="line">    &lt;%- js(&#39;js&#x2F;main.js&#39;) %&gt;</span><br><span class="line">    &lt;!-- 引入代码高亮的 js  这里是加载 --&gt;</span><br><span class="line">    &lt;%- js(&#39;&#x2F;lib&#x2F;highlight&#x2F;highlight.pack.js&#39;) %&gt;</span><br><span class="line">    &lt;script&gt;hljs.initHighlightingOnLoad();&lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-
-<h5 id="3-css样式-main-css"><a href="#3-css样式-main-css" class="headerlink" title="(3)css样式-  main.css"></a>(3)css样式-  main.css</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*#####全局样式######*/</span></span><br><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">asidel</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#262a30</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">asider</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#262a30</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">nav</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#b9e1b1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#content</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">padding-left</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#f9f7ed</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*#####全局样式######*/</span></span><br><span class="line"><span class="comment">/* ##### 导航 ########## */</span></span><br><span class="line"><span class="selector-tag">nav</span> <span class="selector-id">#menu</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: right;</span><br><span class="line">    <span class="attribute">padding-right</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">nav</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">list-style</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">nav</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#555</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">nav</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* #################### 导航 #################### */</span></span><br><span class="line"><span class="comment">/* #################### 侧边栏 #################### */</span></span><br><span class="line"><span class="comment">/* 搜索框 */</span></span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-tag">input</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">290px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#131417</span>;</span><br><span class="line">    <span class="attribute">text-indent</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">outline</span>: none;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#87daff</span>;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 搜索图标 */</span></span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-id">#search</span> <span class="selector-tag">i</span><span class="selector-class">.fa</span><span class="selector-class">.fa-search</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#757575</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#131417</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">2.5</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 滚动条 */</span></span><br><span class="line"><span class="selector-tag">aside</span> &#123;</span><br><span class="line">    <span class="attribute">overflow-y</span>: scroll;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 树目录位置 */</span></span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-id">#tree</span> &#123;</span><br><span class="line">    <span class="attribute">padding-top</span>: <span class="number">55px</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 树目录 */</span></span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-tag">ul</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0px</span> <span class="number">5px</span> <span class="number">5px</span> <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">    <span class="attribute">list-style</span>: none;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">25px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#999</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#ccc</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">    <span class="attribute">cursor</span>:pointer;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-id">#tree</span> <span class="selector-class">.active</span> <span class="selector-tag">a</span>,</span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-id">#tree</span> <span class="selector-class">.active</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#87daff</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#87daff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-id">#tree</span> <span class="selector-tag">i</span><span class="selector-class">.fa</span> &#123;</span><br><span class="line">    <span class="attribute">padding-right</span>: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* #################### 侧边栏 #################### */</span></span><br><span class="line"><span class="comment">/* #################### 文章 #################### */</span></span><br><span class="line"><span class="comment">/* 作者 时间 相关 */</span></span><br><span class="line"><span class="selector-id">#post-author</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">9px</span>;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">60px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#999</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#post-date</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">9px</span>;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">80px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#999</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 文章各个元素间隔 */</span></span><br><span class="line"><span class="selector-id">#article</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#article</span> * &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">30px</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h1</span>,</span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h2</span>,</span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h3</span>,</span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h4</span>,</span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h5</span>,</span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h6</span> &#123;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">0</span> <span class="number">15px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">32px</span>;</span><br><span class="line">    <span class="attribute">font-weight</span>: <span class="number">900</span>;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid <span class="number">#e06c75</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h2</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">25px</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">3px</span> solid <span class="number">#73b1e0</span>;</span><br><span class="line">    <span class="attribute">padding-left</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h3</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">22px</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#e06c75</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">h1</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">border-bottom</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">code</span> &#123;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">5px</span> <span class="number">#999</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">    <span class="attribute">max-width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: auto;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">8px</span> <span class="number">#999</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">pre</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">0</span> <span class="number">15px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">30px</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 表格处理 */</span></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">0</span> <span class="number">50px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">border-collapse</span>: collapse;</span><br><span class="line">  <span class="attribute">border-spacing</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">35px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">8px</span>;</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">5px</span> <span class="number">#999</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">th</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#73b1e0</span>;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">800</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: left;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">35px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#FFF</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:nth-child(odd)</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#F4F4F4</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">td</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#badbf5</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#FFF</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">td</span>, <span class="selector-tag">table</span> <span class="selector-tag">th</span> &#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">5px</span> <span class="number">20px</span> <span class="number">5px</span> <span class="number">20px</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:first-child</span> <span class="selector-tag">th</span><span class="selector-pseudo">:first-child</span> &#123;</span><br><span class="line">  <span class="attribute">border-top-left-radius</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:first-child</span> <span class="selector-tag">th</span><span class="selector-pseudo">:last-child</span> &#123;</span><br><span class="line">  <span class="attribute">border-top-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:last-child</span> <span class="selector-tag">td</span><span class="selector-pseudo">:first-child</span> &#123;</span><br><span class="line">  <span class="attribute">border-bottom-left-radius</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#article</span> <span class="selector-tag">table</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:last-child</span> <span class="selector-tag">td</span><span class="selector-pseudo">:last-child</span> &#123;</span><br><span class="line">  <span class="attribute">border-bottom-right-radius</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* #################### 文章 #################### */</span></span><br><span class="line"><span class="comment">/* #################### 主页 #################### */</span></span><br><span class="line"></span><br><span class="line"><span class="selector-id">#articleList</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#articleList</span> <span class="selector-class">.article-li</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">1px</span> <span class="number">1px</span> <span class="number">8px</span> <span class="number">#999</span>;</span><br><span class="line">    <span class="attribute">list-style</span>: none;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#999</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#articleList</span> <span class="selector-class">.article-digest</span> * &#123;</span><br><span class="line">    <span class="attribute">word-wrap</span>: break-word;</span><br><span class="line">    <span class="attribute">display</span>: inline;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#555</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    <span class="attribute">cursor</span>:auto;</span><br><span class="line">    <span class="attribute">border-radius</span>: none;</span><br><span class="line">    <span class="attribute">box-shadow</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#articleList</span> <span class="selector-class">.article-digest</span>&#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">35px</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">85%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#articleList</span> <span class="selector-class">.article-date</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#e06c75</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#f9f7ed</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">top</span>: -<span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">2px</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#articleList</span> <span class="selector-class">.article-read</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#e06c75</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#f9f7ed</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">2px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">15px</span>;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">140px</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#articleList</span> <span class="selector-class">.article-title</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#555</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">24px</span>;</span><br><span class="line">    <span class="attribute">font-weight</span>: bold;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">110px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* #################### 主页 #################### */</span></span><br><span class="line"><span class="comment">/* #################### 自适应 #################### */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">800px</span>) &#123;</span><br><span class="line">    <span class="selector-tag">aside</span> &#123;</span><br><span class="line">        <span class="attribute">display</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-id">#content</span> &#123;</span><br><span class="line">        <span class="attribute">padding-left</span>: <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">canvas</span><span class="selector-id">#live2dcanvas</span> &#123;</span><br><span class="line">        <span class="attribute">display</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*竖屏*/</span></span><br><span class="line"><span class="keyword">@media</span> all <span class="keyword">and</span> (orientation : portrait) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">aside</span> &#123;</span><br><span class="line">        <span class="attribute">display</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-id">#content</span> &#123;</span><br><span class="line">        <span class="attribute">padding-left</span>: <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">canvas</span><span class="selector-id">#live2dcanvas</span> &#123;</span><br><span class="line">        <span class="attribute">display</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* #################### 自适应 #################### */</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="4-添加导航栏-nav-ejs"><a href="#4-添加导航栏-nav-ejs" class="headerlink" title="(4) 添加导航栏  nav.ejs"></a>(4) 添加导航栏  nav.ejs</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id&#x3D;&quot;menu&quot;&gt;</span><br><span class="line">    &lt;!-- 内部链接本页面直接跳转 --&gt;</span><br><span class="line">    &lt;% for ( menu in theme.menus ) &#123; %&gt;</span><br><span class="line">    &lt;li class&#x3D;&quot;menu-item&quot;&gt;</span><br><span class="line">        &lt;a href&#x3D;&quot;&lt;%- theme.menus[menu] %&gt;&quot; class&#x3D;&quot;menu-item-link&quot;&gt;&lt;%- menu %&gt;&lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;li&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">    &lt;!-- 外部链接打开新的窗口跳转 --&gt;</span><br><span class="line">    &lt;% for ( link in theme.links ) &#123; %&gt;</span><br><span class="line">    &lt;li class&#x3D;&quot;menu-item&quot;&gt;</span><br><span class="line">        &lt;a href&#x3D;&quot;&lt;%- theme.links[link] %&gt;&quot; class&#x3D;&quot;menu-item-link&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;%- link %&gt;&lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;li&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br></pre></td></tr></table></figure>
-
-<h5 id="5-侧边栏-aside-ejs"><a href="#5-侧边栏-aside-ejs" class="headerlink" title="(5)侧边栏 aside.ejs"></a>(5)侧边栏 aside.ejs</h5><p>树状结构的侧边栏所需的图片库 <a href="http://fontawesome.dashgame.com/">Font Awesome</a>  ,语句见主题配置文件</p>
-<p>laout.ejs中引用新增字体图片库的css文件</p>
-<p>语句见layout.ejs文件添加内容</p>
-<p>在 main.css 文件中，增加侧边栏美化</p>
-<p>adide.ejs  —-主要做了路径转树的算法，然后显示树</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 侧边目录栏 --&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;tree&quot;&gt;</span><br><span class="line">    &lt;%</span><br><span class="line">        &lt;!-- 将路径转换成 tree 目录结构 --&gt;</span><br><span class="line">        const pathToTree &#x3D; (input) &#x3D;&gt; &#123;</span><br><span class="line">            var output &#x3D; [];</span><br><span class="line">            input.forEach(function(post)&#123;</span><br><span class="line">                &lt;!-- 用来分割去掉时间的路径 --&gt;</span><br><span class="line">                var chain &#x3D; post.slug.split(&quot;&#x2F;&quot;);</span><br><span class="line">                var currentNode &#x3D; output;</span><br><span class="line">                for (var j &#x3D; 0; j &lt; chain.length; j++) &#123;</span><br><span class="line">                    if (chain[j] &#x3D;&#x3D;&#x3D; &#39;&#39;) &#123;</span><br><span class="line">                        break;</span><br><span class="line">                    &#125;</span><br><span class="line">                    var wantedNode &#x3D; chain[j];</span><br><span class="line">                    var lastNode &#x3D; currentNode;</span><br><span class="line"></span><br><span class="line">                    for (var k &#x3D; 0; k &lt; currentNode.length; k++) &#123;</span><br><span class="line">                        if (currentNode[k].title &#x3D;&#x3D; wantedNode) &#123;</span><br><span class="line">                            currentNode &#x3D; currentNode[k].children;</span><br><span class="line">                            break;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    if (lastNode &#x3D;&#x3D; currentNode) &#123;</span><br><span class="line">                        var newNode &#x3D; currentNode[k] &#x3D; &#123; post: post, title: wantedNode, children: [] &#125;;</span><br><span class="line">                        currentNode &#x3D; newNode.children;</span><br><span class="line">                    &#125; else &#123;</span><br><span class="line">                        delete currentNode.children</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">            return output;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        &lt;!-- console.log(output) --&gt;</span><br><span class="line">    %&gt;</span><br><span class="line"></span><br><span class="line">    &lt;%</span><br><span class="line">        &lt;!-- 递归输出侧边栏目录 tree --&gt;</span><br><span class="line">        const showTree &#x3D; (input) &#x3D;&gt; &#123;</span><br><span class="line"></span><br><span class="line">            &lt;!-- 按 tile ascii 排序 --&gt;</span><br><span class="line">            input.sort(function(a, b)&#123;</span><br><span class="line">                var len &#x3D; a.title.length &gt; b.title.length ? a.title.length : b.title.length;</span><br><span class="line">                for ( var i &#x3D; 0; i &lt; len; i++ ) &#123;</span><br><span class="line">                    res &#x3D; a.title[i].charCodeAt() - b.title[i].charCodeAt();</span><br><span class="line">                    if ( res ) &#123; return res &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line"></span><br><span class="line">            &lt;!-- 循环输出 html 结构 --&gt;</span><br><span class="line">            input.forEach(function(node) &#123;</span><br><span class="line">                if ( node.children &#x3D;&#x3D; 0 ) &#123;</span><br><span class="line"></span><br><span class="line">    %&gt;</span><br><span class="line">                    &lt;ul&gt;</span><br><span class="line">                        &lt;li class&#x3D;&quot;file&lt;%- (is_post() &amp;&amp; node.post._id &#x3D;&#x3D; page._id) ? &#39; active&#39; : &#39;&#39; %&gt;&quot;&gt;</span><br><span class="line">                            &lt;a href&#x3D;&quot;&lt;%- config.root %&gt;&lt;%- node.post.path %&gt;&quot;&gt;</span><br><span class="line">                                &lt;i class&#x3D;&quot;fa fa-file&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">                                &lt;%- node.title %&gt;</span><br><span class="line">                            &lt;&#x2F;a&gt;</span><br><span class="line">                        &lt;&#x2F;li&gt;</span><br><span class="line">                    &lt;&#x2F;ul&gt;</span><br><span class="line">    &lt;%</span><br><span class="line">                &#125;</span><br><span class="line">                else &#123;</span><br><span class="line">    %&gt;</span><br><span class="line">                    &lt;ul&gt;</span><br><span class="line">                        &lt;li class&#x3D;&quot;directory&quot;&gt;</span><br><span class="line">                            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;directory&quot;&gt;</span><br><span class="line">                                &lt;i class&#x3D;&quot;fa fa-folder&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">                                &lt;%- node.title %&gt;</span><br><span class="line">                            &lt;&#x2F;a&gt;</span><br><span class="line">                            &lt;%- showTree(node.children) %&gt;</span><br><span class="line">                        &lt;&#x2F;li&gt;</span><br><span class="line">                        </span><br><span class="line">                    &lt;&#x2F;ul&gt;</span><br><span class="line">    &lt;%</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        showTree(pathToTree(site.posts))</span><br><span class="line">    %&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="6-post-ejs"><a href="#6-post-ejs" class="headerlink" title="(6) post.ejs"></a>(6) post.ejs</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;span id&#x3D;&quot;post-author&quot;&gt;作者: &lt;%- theme.author %&gt;&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;span id&#x3D;&quot;post-date&quot;&gt;&lt;%- date(page.date, &quot;YYYY-MM-DD HH:mm:ss&quot;) %&gt;&lt;&#x2F;span&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id&#x3D;&quot;article&quot;&gt;</span><br><span class="line">    &lt;%- page.content %&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="7-代码高亮"><a href="#7-代码高亮" class="headerlink" title="(7)代码高亮"></a>(7)代码高亮</h5><p>使用<a href="https://highlightjs.org/">highlightjs</a> , 下载系统换的主题, 然后放到source的lib 中见主题配置文件</p>
-<p>在 『layout.ejs』中，引入它的 css 与 js，引入后，记得让高亮加载</p>
-<p>如果代码高亮未成功, 到总配置文件的查看 ,高亮是不是已经设置, 用自己的高亮,就如下设置</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span></span><br></pre></td></tr></table></figure>
-
-<p>注意: 修改配置文件后, 重启hexo前, 可执行语句 <code>hexo clean</code> 来清除缓存</p>
-<h5 id="8-点击事件–main-js"><a href="#8-点击事件–main-js" class="headerlink" title="(8) 点击事件–main.js"></a>(8) 点击事件–main.js</h5><p>引入jquery库, 放在source/lib目录下</p>
-<p>然后在layout.ejs中引用jquery (js的函数库), 所以jquery的引用要在js 之前</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    clickTreeDirectory();</span><br><span class="line">    serachTree();</span><br><span class="line">    pjaxLoad();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 点击目录事件</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">clickTreeDirectory</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 判断有 active 的话，就递归循环把它的父目录打开</span></span><br><span class="line">    <span class="keyword">var</span> treeActive = $(<span class="string">"#tree .active"</span>);</span><br><span class="line">    <span class="keyword">if</span> ( treeActive.length ) &#123;</span><br><span class="line">        showActiveTree(treeActive, <span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 点击目录，就触发折叠动画效果</span></span><br><span class="line">    $(<span class="built_in">document</span>).on(<span class="string">"click"</span>, <span class="string">"#tree a[class='directory']"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 用来清空所有绑定的其他事件</span></span><br><span class="line">        event.preventDefault();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> icon = $(<span class="keyword">this</span>).children(<span class="string">".fa"</span>);</span><br><span class="line">        <span class="keyword">var</span> iconIsOpen = icon.hasClass(<span class="string">"fa-folder-open"</span>);</span><br><span class="line">        <span class="keyword">var</span> subTree = $(<span class="keyword">this</span>).siblings(<span class="string">"ul"</span>);</span><br><span class="line"></span><br><span class="line">        icon.removeClass(<span class="string">"fa-folder-open"</span>).removeClass(<span class="string">"fa-folder"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (iconIsOpen) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">typeof</span> subTree != <span class="string">"undefined"</span>) &#123;</span><br><span class="line">                subTree.slideUp(&#123; <span class="attr">duration</span>: <span class="number">100</span> &#125;);</span><br><span class="line">            &#125;</span><br><span class="line">            icon.addClass(<span class="string">"fa-folder"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">typeof</span> subTree != <span class="string">"undefined"</span>) &#123;</span><br><span class="line">                subTree.slideDown(&#123; <span class="attr">duration</span>: <span class="number">100</span> &#125;);</span><br><span class="line">            &#125;</span><br><span class="line">            icon.addClass(<span class="string">"fa-folder-open"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 循环递归展开父节点</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showActiveTree</span>(<span class="params">jqNode, isSiblings</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> ( jqNode.attr(<span class="string">"id"</span>) === <span class="string">"tree"</span>  ) &#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">    <span class="keyword">if</span> ( jqNode.is(<span class="string">"ul"</span>) ) &#123;</span><br><span class="line">        jqNode.css(<span class="string">"display"</span>, <span class="string">"block"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 这个 isSiblings 是给搜索用的</span></span><br><span class="line">        <span class="comment">// true 就显示开同级兄弟节点</span></span><br><span class="line">        <span class="comment">// false 就是给搜索用的，值需要展示它自己就好了，不展示兄弟节点</span></span><br><span class="line">        <span class="keyword">if</span> ( isSiblings ) &#123; </span><br><span class="line">            jqNode.siblings().css(<span class="string">"display"</span>, <span class="string">"block"</span>);</span><br><span class="line">            jqNode.siblings(<span class="string">"a"</span>).css(<span class="string">"display"</span>, <span class="string">"inline"</span>);</span><br><span class="line">            jqNode.siblings(<span class="string">"a"</span>).find(<span class="string">".fa-folder"</span>).removeClass(<span class="string">"fa-folder"</span>).addClass(<span class="string">"fa-folder-open"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    jqNode.each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; showActiveTree($(<span class="keyword">this</span>).parent(), isSiblings); &#125;);</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 搜索框输入事件</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">serachTree</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 解决搜索大小写问题</span></span><br><span class="line">    jQuery.expr[<span class="string">':'</span>].contains = <span class="function"><span class="keyword">function</span> (<span class="params">a, i, m</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> jQuery(a).text().toUpperCase().indexOf(m[<span class="number">3</span>].toUpperCase()) &gt;= <span class="number">0</span>;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#search input"</span>).on(<span class="string">"input"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">        e.preventDefault();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取 inpiut 输入框的内容</span></span><br><span class="line">        <span class="keyword">var</span> inputContent = e.currentTarget.value;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 没值就收起父目录，但是得把 active 的父目录都展开</span></span><br><span class="line">        <span class="keyword">if</span> ( inputContent.length === <span class="number">0</span> ) &#123;</span><br><span class="line">            $(<span class="string">".fa-folder-open"</span>).removeClass(<span class="string">"fa-folder-open"</span>).addClass(<span class="string">"fa-folder"</span>);</span><br><span class="line">            $(<span class="string">"#tree ul"</span>).css(<span class="string">"display"</span>, <span class="string">"none"</span>);</span><br><span class="line">            <span class="keyword">if</span> ( $(<span class="string">"#tree .active"</span>).length ) &#123;</span><br><span class="line">                showActiveTree($(<span class="string">"#tree .active"</span>), <span class="literal">true</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                $(<span class="string">"#tree"</span>).children().css(<span class="string">"display"</span>, <span class="string">"block"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 有值就搜索，并且展开父目录</span></span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            $(<span class="string">".fa-folder"</span>).removeClass(<span class="string">"fa-folder"</span>).addClass(<span class="string">"fa-folder-open"</span>);</span><br><span class="line">            $(<span class="string">"#tree ul"</span>).css(<span class="string">"display"</span>, <span class="string">"none"</span>);</span><br><span class="line">            <span class="keyword">var</span> searchResult = $(<span class="string">"#tree li"</span>).find(<span class="string">"a:contains('"</span> + inputContent + <span class="string">"')"</span>);</span><br><span class="line">            <span class="keyword">if</span> ( searchResult.length ) &#123; </span><br><span class="line">                showActiveTree(searchResult.parent(), <span class="literal">false</span>) </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//局部刷新</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">pjaxLoad</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $(<span class="built_in">document</span>).pjax(<span class="string">'#tree a'</span>, <span class="string">'#content'</span>, &#123;<span class="attr">fragment</span>:<span class="string">'#content'</span>, <span class="attr">timeout</span>:<span class="number">8000</span>&#125;);</span><br><span class="line">    $(<span class="built_in">document</span>).pjax(<span class="string">'#menu a'</span>, <span class="string">'#content'</span>, &#123;<span class="attr">fragment</span>:<span class="string">'#content'</span>, <span class="attr">timeout</span>:<span class="number">8000</span>&#125;);</span><br><span class="line">    $(<span class="built_in">document</span>).pjax(<span class="string">'#articleList a'</span>, <span class="string">'#content'</span>, &#123;<span class="attr">fragment</span>:<span class="string">'#content'</span>, <span class="attr">timeout</span>:<span class="number">8000</span>&#125;);</span><br><span class="line">    $(<span class="built_in">document</span>).on(&#123;</span><br><span class="line">        <span class="string">"pjax:complete"</span>: <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">            $(<span class="string">"pre code"</span>).each(<span class="function"><span class="keyword">function</span> (<span class="params">i, block</span>)</span>&#123;</span><br><span class="line">                hljs.highlightBlock(block);</span><br><span class="line">            &#125;);</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// 添加 active</span></span><br><span class="line">            $(<span class="string">"#tree .active"</span>).removeClass(<span class="string">"active"</span>);</span><br><span class="line">            e.relatedTarget.parentNode.classList.add(<span class="string">"active"</span>);</span><br><span class="line">            showArticleIndex();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="9-搜索框"><a href="#9-搜索框" class="headerlink" title="(9)搜索框"></a>(9)搜索框</h5><p>用于侧边栏目录搜索</p>
-<p>在main.js中添加语句</p>
-<h5 id="10-局部刷新"><a href="#10-局部刷新" class="headerlink" title="(10) 局部刷新"></a>(10) 局部刷新</h5><p>用ajax做局部刷新 , 搜索栏出现结果后, 点击目录, 在正文中局部刷新信息</p>
-<p><a href="https://github.com/defunkt/jquery-pjax">pjax</a>  可以实现此功能</p>
-<p>放入source目录下, 在layout.ejs中引用</p>
-<h5 id="11-主页-index-js"><a href="#11-主页-index-js" class="headerlink" title="(11)主页 index.js"></a>(11)主页 index.js</h5><p>效果是全局文章浏览</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;articleList&quot;&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;% site.posts.forEach(function(post)&#123; %&gt;</span><br><span class="line"></span><br><span class="line">            &lt;li class&#x3D;&quot;article-li&quot;&gt;</span><br><span class="line">                &lt;span class&#x3D;&quot;article-date&quot;&gt;&lt;%- date(post.date, &quot;YYYY-MM-DD&quot;) %&gt;&lt;&#x2F;span&gt;</span><br><span class="line">                &lt;a class&#x3D;&quot;article-read&quot; href&#x3D;&quot;&lt;%- config.root %&gt;&lt;%- post.path %&gt;&quot;&gt; 阅读全文 &lt;&#x2F;span&gt;</span><br><span class="line">                &lt;a class&#x3D;&quot;article-title&quot; href&#x3D;&quot;&lt;%- config.root %&gt;&lt;%- post.path %&gt;&quot;&gt;&lt;%- post.slug.split(&quot;&#x2F;&quot;)[post.slug.split(&quot;&#x2F;&quot;).length-1] %&gt;&lt;&#x2F;a&gt;</span><br><span class="line">                &lt;div class&#x3D;&quot;article-digest&quot;&gt;</span><br><span class="line">                    &lt;%- post.more.replace(&#x2F;&lt;\&#x2F;?.+?\&#x2F;?&gt;&#x2F;g, &quot;&quot;).substring(0, 100) %&gt;</span><br><span class="line">                    ...</span><br><span class="line">                &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;&#x2F;li&gt;</span><br><span class="line">            </span><br><span class="line">        &lt;% &#125;); %&gt;</span><br><span class="line">    &lt;&#x2F;ul&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
-<p>美化主页样式 ,见main.css</p>
-<p>主页 js见main.js</p>
-<h5 id="12-关于"><a href="#12-关于" class="headerlink" title="(12) 关于"></a>(12) 关于</h5><p>是个人信息,直接引入md  在hexo的-post同级目录下,新建about目录,然后新建index.md</p>
-<h5 id="13-手机端自适应"><a href="#13-手机端自适应" class="headerlink" title="(13) 手机端自适应"></a>(13) 手机端自适应</h5><p>在css中设置, 当浏览器窗口小于 800px 时并且处于手机竖屏状态，隐藏侧边栏，留给手机端足够的空间进行文字浏览</p>
-<h3 id="四-部署到github静态页面上"><a href="#四-部署到github静态页面上" class="headerlink" title="四 部署到github静态页面上"></a>四 部署到github静态页面上</h3><p>参考文章 : <a href="https://www.cnblogs.com/yyhh/p/11058985.html">https://www.cnblogs.com/yyhh/p/11058985.html</a></p>
-</div><div class="index-category-tag">  </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-01-07T12:32:53.000Z">2020-01-07</time><a class="commentCountImg" href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/#comment-container"><span class="display-none-class">4d93d189d21d13ecb8f83178ba73aacd</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="4d93d189d21d13ecb8f83178ba73aacd"> 99+</span>    </a><span class="level-item">2 分钟 读完 (大约 360 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/">20200107微信小程序新建表格,并添加点击数据跳转页面功能</a></h1><div class="content"><h2 id="微信小程序新建表格-并添加点击数据跳转页面功能"><a href="#微信小程序新建表格-并添加点击数据跳转页面功能" class="headerlink" title="微信小程序新建表格,并添加点击数据跳转页面功能"></a>微信小程序新建表格,并添加点击数据跳转页面功能</h2><h4 id="一-新建表格"><a href="#一-新建表格" class="headerlink" title="一 . 新建表格"></a>一 . 新建表格</h4><ol>
-<li>在wxss的页面中添加如下样式,样式数据可自行调整</li>
-</ol>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.table</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">0px</span> solid black;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.tr</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">3rem</span>;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.td</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">40%</span>;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.bg-w</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: snow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.bg-g</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#E6F3F9</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.th</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">40%</span>;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#3366FF</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">3rem</span>;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>在js页面中添加数据列表</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  list:[</span><br><span class="line">    &#123;<span class="string">"code"</span>:<span class="string">"1"</span>,<span class="string">"j"</span>:<span class="string">"第一章"</span>,<span class="string">"c"</span>:<span class="string">"第一章"</span>&#125;,</span><br><span class="line">    &#123;<span class="string">"code"</span>:<span class="string">"2"</span>,<span class="string">"j"</span>:<span class="string">"第二章"</span>,<span class="string">"c"</span>:<span class="string">"第二章"</span>&#125;,</span><br><span class="line">    &#123;<span class="string">"code"</span>:<span class="string">"3"</span>,<span class="string">"j"</span>:<span class="string">"第三章"</span>,<span class="string">"c"</span>:<span class="string">"第三章"</span>&#125;,</span><br><span class="line">    &#123;<span class="string">"code"</span>:<span class="string">"4"</span>,<span class="string">"j"</span>:<span class="string">"第四章"</span>,<span class="string">"c"</span>:<span class="string">"第四章"</span>&#125;,</span><br><span class="line">    &#123;<span class="string">"code"</span>:<span class="string">"5"</span>,<span class="string">"j"</span>:<span class="string">"第五章"</span>,<span class="string">"c"</span>:<span class="string">"第五章"</span>&#125;,</span><br><span class="line">    &#123;<span class="string">"code"</span>:<span class="string">"6"</span>,<span class="string">"j"</span>:<span class="string">"第六章"</span>,<span class="string">"c"</span>:<span class="string">"第六章"</span>&#125;,</span><br><span class="line">    &#123;<span class="string">"code"</span>:<span class="string">"7"</span>,<span class="string">"j"</span>:<span class="string">"第七章"</span>,<span class="string">"c"</span>:<span class="string">"第七章"</span>&#125;,</span><br><span class="line">    &#123;<span class="string">"code"</span>:<span class="string">"8"</span>,<span class="string">"j"</span>:<span class="string">"第八章"</span>,<span class="string">"c"</span>:<span class="string">"第八章"</span>&#125;,</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>在wxml文件下新增表格</li>
-</ol>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"table"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"tr bg-w"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"th"</span>&gt;</span>表头1<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"th"</span>&gt;</span>表头2<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"th"</span>&gt;</span>表头3<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">block</span> <span class="attr">wx:for</span>=<span class="string">"&#123;&#123;list&#125;&#125;"</span> <span class="attr">wx:key</span>=<span class="string">"&#123;&#123;code&#125;&#125;"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"tr bg-g"</span>  <span class="attr">wx:if</span>=<span class="string">"&#123;&#123;index % 2 == 0&#125;&#125;"</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"td"</span>&gt;</span>&#123;&#123;item.code&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"td"</span> <span class="attr">bindtap</span>=<span class="string">"btn&#123;&#123;item.code&#125;&#125;"</span>&gt;</span>&#123;&#123;item.j&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"td"</span>&gt;</span>&#123;&#123;item.c&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"tr"</span> <span class="attr">wx:else</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"td"</span>&gt;</span>&#123;&#123;item.code&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"td"</span> <span class="attr">bindtap</span>=<span class="string">"btn&#123;&#123;item.code&#125;&#125;"</span>&gt;</span>&#123;&#123;item.j&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"td"</span>&gt;</span>&#123;&#123;item.c&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">block</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>以上内容参考:<a href="https://blog.csdn.net/benben0729/article/details/81567967">https://blog.csdn.net/benben0729/article/details/81567967</a></p>
-<h2 id="二-表格中点击数据跳转"><a href="#二-表格中点击数据跳转" class="headerlink" title="二 表格中点击数据跳转"></a>二 表格中点击数据跳转</h2><p>在上述第3点的wxml代码中有如下代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"td"</span> <span class="attr">bindtap</span>=<span class="string">"btn&#123;&#123;item.code&#125;&#125;"</span>&gt;</span>&#123;&#123;item.j&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></span><br><span class="line">bindtap="btn&#123;&#123;item.code&#125;&#125;" 这段内容就是跳转所需要的代码</span><br></pre></td></tr></table></figure>
-
- 是在js中取的对应的数据,然后在js中编写如下跳转代码
-
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">btn2: <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">    wx.navigateTo(&#123;</span><br><span class="line">      url: <span class="string">'../study-2/study-2'</span>,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
-
-<p>当然,目前我还未解决如何在点击的时候传递数据到后台, 使得js中的跳转代码也能够一步到位,不需要过多重复</p>
-<p>未完待续…</p>
-</div><div class="index-category-tag">  </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-01-04T04:53:37.000Z">2020-01-04</time><a class="commentCountImg" href="/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/#comment-container"><span class="display-none-class">77524d04a2979b40db8300eef48b7bd8</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="77524d04a2979b40db8300eef48b7bd8"> 99+</span>    </a><span class="level-item">2 分钟 读完 (大约 264 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/">学习如何更换blog的主题</a></h1><div class="content"><h1 id="2020年1月4号-学习如何更换blog的主题"><a href="#2020年1月4号-学习如何更换blog的主题" class="headerlink" title="2020年1月4号 学习如何更换blog的主题"></a>2020年1月4号 学习如何更换blog的主题</h1><h2 id="第一步-找到喜欢的主题"><a href="#第一步-找到喜欢的主题" class="headerlink" title="第一步 找到喜欢的主题"></a>第一步 找到喜欢的主题</h2><ul>
-<li>使用命令 <code>$ git clone 主题的地址</code>  ，注意主题要clone到blog文件夹中的themes文件夹内</li>
-</ul>
-<h2 id="第二步-修改配置文件并安装"><a href="#第二步-修改配置文件并安装" class="headerlink" title="第二步  修改配置文件并安装"></a>第二步  修改配置文件并安装</h2><ol>
-<li>git克隆完成后，打开本地blog下的“_config.yml”配置文件（非主题文件下）</li>
-<li>找到theme配置选项, 将theme选项配置为新下载的主题（“：”冒号之后空格不可少 空格后为新下载的主题名）</li>
-</ol>
-<h2 id="第三步-修改主题配置文件"><a href="#第三步-修改主题配置文件" class="headerlink" title="第三步 修改主题配置文件"></a>第三步 修改主题配置文件</h2><ul>
-<li>打开新主题路径下的”_config.yml”,按照主题作者要求进行相关配置</li>
-</ul>
-<h2 id="第四步-调试主题-发布"><a href="#第四步-调试主题-发布" class="headerlink" title="第四步 调试主题,发布"></a>第四步 调试主题,发布</h2><blockquote>
-<p>根据自己的需要,修改主题的部分信息</p>
-<p><code>$ hexo server --debug</code>可以在blog文件夹下,使用上述语句,进行调试</p>
-<p>调试无误后,即可发布到自己的blog上啦</p>
-<p><code>$ hexo g -d</code>进行发布</p>
-</blockquote>
-<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>在修改主题配置文件的时候发现的问题</p>
-<blockquote>
-</blockquote>
-</div><div class="index-category-tag">  </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-01-01T12:31:54.000Z">2020-01-01</time><a class="commentCountImg" href="/2020/01/01/2019%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/#comment-container"><span class="display-none-class">210eb5c3eab3ae44e9234e09b56c8b09</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="210eb5c3eab3ae44e9234e09b56c8b09"> 99+</span>    </a><span class="level-item">14 分钟 读完 (大约 2111 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/01/01/2019%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">2019年最后的学习</a></h1><div class="content"><p>摘要</p>
-<p>学习markdown</p>
-<h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>我是一级标题</p>
-<ul>
-<li>我是二级标题</li>
-</ul>
-<h2 id="段落的换行是两个以上空格加回车"><a href="#段落的换行是两个以上空格加回车" class="headerlink" title="段落的换行是两个以上空格加回车"></a>段落的换行是两个以上空格加回车</h2><p>第二段    </p>
-<p>第三段  </p>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>我是<em>斜体文字</em>—-在需要斜体的文字上加 双*号 </p>
-<p>我是<em>斜体文字 2</em>—-在需要斜体的文字上加 双_号</p>
-<p>我是<strong>粗体文字</strong>—–在需要粗体的文字上加双**号  __同等</p>
-<p>我是<strong><em>粗斜体文字</em></strong>  —-加双***号</p>
-<h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><p>一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格</p>
-<hr>
-<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>在需要显示删除的文字两端加~~即可</p>
-<p><del>我是被删除了</del></p>
-<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>通过html的<u>标签来实现</p>
-<p><u>我带下划线哟</u></p>
-<h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><p>[^ 要注明的文字]   </p>
-<p>例子: 鼠标悬浮脚注, 就可以显示第二句话</p>
-<p>我是脚注[^第一次学习脚注]</p>
-<p>[^第一次学习脚注]: 2019年最后一天, 学习markdown的语法</p>
-<h2 id="markdown列表"><a href="#markdown列表" class="headerlink" title="markdown列表"></a>markdown列表</h2><p>支持无序及有序列表</p>
-<p>无序可用 *  +  - 做标记</p>
-<ul>
-<li><ul>
-<li><ul>
-<li></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>有序</p>
-<ol>
-<li><p>第一项</p>
-</li>
-<li></li>
-<li><p>第二个</p>
-<hr>
-</li>
-</ol>
-<p>列表嵌套</p>
-<ol>
-<li><p>第一项</p>
-<ul>
-<li><p>第一项的第一个元素</p>
-<ul>
-<li>第一项的第二个元素</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>第二项 </p>
-<ul>
-<li>第二项的第一个元素</li>
-</ul>
-</li>
-<li><p>dddd</p>
-</li>
-</ol>
-<hr>
-<h2 id="markdown区块"><a href="#markdown区块" class="headerlink" title="markdown区块"></a>markdown区块</h2><p>用 &gt; 符号,然后紧跟一个空格</p>
-<blockquote>
-<p>区块引用</p>
-<p>20191231</p>
-<p>学习markdown </p>
-</blockquote>
-<p>区块嵌套, 第一个用&gt;  第二层用&gt;&gt;  第三层用&gt;&gt;&gt;</p>
-<blockquote>
-<p>第一层</p>
-<blockquote>
-<p>第二层</p>
-<blockquote>
-<p>第三层</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<hr>
-<h2 id="markdown代码"><a href="#markdown代码" class="headerlink" title="markdown代码"></a>markdown代码</h2><p>段落上的一个函数或片段的代码可以用(`)包起来</p>
-<p><code>printf()</code>函数</p>
-<h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><p>使用4个空格或者一个制表符(tab键),或者用(```)包裹</p>
-<pre><code>&lt;div&gt;这是一个div&lt;/div&gt;</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">javascript: </span><br><span class="line">	$(<span class="built_in">document</span>).ready(</span><br><span class="line">	<span class="function"><span class="keyword">function</span>)(<span class="params"></span>)</span>&#123; </span><br><span class="line">	alert(<span class="string">'Markdown'</span>);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="markdown-链接"><a href="#markdown-链接" class="headerlink" title="markdown 链接"></a>markdown 链接</h2><p>([链接名称])(链接地址) 或者&lt;链接地址&gt;  注:使用时, 去掉 第一个()</p>
-<p>这是一个链接 <a href="https://www.qiudx.top">qdx的博客</a></p>
-<p><a href="https://www.qiudx.top">https://www.qiudx.top</a></p>
-<h4 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h4><p>链接也可以用变量代替,文档末尾附带变量地址:</p>
-<p>例: [Google] ([1])    此时用1作为变量, 使用时去掉[1]外面的()</p>
-<p>[Google][1]  </p>
-<p>文档末尾注明: [1]: <a href="http://google.com/">http://google.com/</a></p>
-<p>+++</p>
-<h2 id="Markdown图片"><a href="#Markdown图片" class="headerlink" title="Markdown图片"></a>Markdown图片</h2><p>格式如下: ![alt 属性文本] (图片地址) </p>
-<pre><code>![alt 属性文本] (图片地址 &quot;可选标题&quot;) 
-
-图片地址也可以是网址 , 链接可以如上使用变量</code></pre><p>例子: <img src=""  alt="alt 属性文本" style="zoom:25%;" /> </p>
-<p><img src="/images/xue.jpg" alt="alt 图片"></p>
-<hr>
-<h2 id="Markdown表格"><a href="#Markdown表格" class="headerlink" title="Markdown表格"></a>Markdown表格</h2><p>制作表格用|来分隔不同的单元格, 用-分隔表头和其他行</p>
-<p>格式: |表头 | 表头 |</p>
-<pre><code>|----- | -----|
-
-|单元格|单元格|</code></pre><p>例子: </p>
-<pre><code>|表头|表头|
-
-|----|----|
-
-|单元格|单元格|</code></pre><p>??? 表格格式使用不成功</p>
-<p>快捷键 ctrl+t</p>
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="Markdown高级技巧"><a href="#Markdown高级技巧" class="headerlink" title="Markdown高级技巧"></a>Markdown高级技巧</h2><h4 id="支持html元素"><a href="#支持html元素" class="headerlink" title="支持html元素"></a>支持html元素</h4><p>可使用<kbd> <b> <i> <em> <sup> <sub> <br>等</p>
-<p>例如: <kbd>Ctrl</kbd>     <b>加粗</b>    <i>倾斜</i>     <em>我是</em></p>
-<p>==高亮==</p>
-<h4 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h4><p>Markdown 使用反斜杠转义特殊字符</p>
-<p>**</p>
-<h4 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h4><p>插入数学公式, 使用两个$$包裹Tex或者LaTeX格式的数学公式来实现.提交后，问答和文章页会根据需要加载 Mathjax 对数学公式进行渲染。如：<br>$$<br>\mathbf(v)_1\times\mathbf(v)_2=  \begin{vmatrix}<br>\mathbf(i) &amp; \mathbf{j} &amp; \mathbf{k} \<br>\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \<br>\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \<br>\end{vmatrix}<br>$$</p>
-<h3 id="学习用md语言花流程图"><a href="#学习用md语言花流程图" class="headerlink" title="学习用md语言花流程图"></a>学习用md语言花流程图</h3><ol>
-<li>graph LR   横向流程图源代码格式(这个是mermaid语言, 要用引用代码的方式  ```来处理)</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR </span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">	B --&gt; C&#123;条件a&#125;</span><br><span class="line">	C --&gt;|a&#x3D;1| D[结果1]</span><br><span class="line">	C --&gt;|a&#x3D;2| E[结果2]</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>graph TD 竖向流程图</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt; |a&#x3D;2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<ol start="3">
-<li><p><strong>3、标准流程图源码格式：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;flowchart-0&quot; class&#x3D;&quot;flow-chart&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
-<p><strong>4、标准流程图源码格式（横向）：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;flowchart-1&quot; class&#x3D;&quot;flow-chart&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-
-<p><strong>5、UML时序图源码样例：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;sequence</span><br><span class="line"></span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line">**6、UML时序图源码复杂样例：**</span><br><span class="line">   </span><br><span class="line">   ~~~sequence</span><br><span class="line">   &#96;&#96;&#96;sequence</span><br><span class="line">   Title: 标题：复杂使用</span><br><span class="line">   对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">   Note right of 对象B: 对象B的描述</span><br><span class="line">   Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">   对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">   对象B-&gt;小三: 你好吗</span><br><span class="line">   小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">   对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">   Note over 小三,对象B: 我们是朋友</span><br><span class="line">   participant C</span><br><span class="line">   Note right of C: 没人陪我玩</span><br><span class="line">   &#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
-
-<p><strong>7、UML标准时序图样例：</strong></p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;mermaid</span><br><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 张三</span><br><span class="line">    participant 李四</span><br><span class="line">    张三-&gt;王五: 王五你好吗？</span><br><span class="line">    loop 健康检查</span><br><span class="line">        王五-&gt;王五: 与疾病战斗</span><br><span class="line">    end</span><br><span class="line">    Note right of 王五: 合理 食物 &lt;br&#x2F;&gt;看医生...</span><br><span class="line">    李四--&gt;&gt;张三: 很好!</span><br><span class="line">    王五-&gt;李四: 你怎么样?</span><br><span class="line">    李四--&gt;王五: 很好!</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
-
-<p><strong>8、甘特图样例：</strong></p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;mermaid</span><br><span class="line">%% 语法示例</span><br><span class="line">        gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title 软件开发甘特图</span><br><span class="line">        section 设计</span><br><span class="line">        需求                      :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        原型                      :active,  des2, 2014-01-09, 3d</span><br><span class="line">        UI设计                     :         des3, after des2, 5d</span><br><span class="line">    未来任务                     :         des4, after des3, 5d</span><br><span class="line">        section 开发</span><br><span class="line">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span><br><span class="line">        设计框架                             :crit, done, after des2, 2d</span><br><span class="line">        开发                                 :crit, active, 3d</span><br><span class="line">        未来任务                              :crit, 5d</span><br><span class="line">        耍                                   :2d</span><br><span class="line">        section 测试</span><br><span class="line">        功能测试                              :active, a1, after des3, 3d</span><br><span class="line">        压力测试                               :after a1  , 20h</span><br><span class="line">        测试报告                               : 48h</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content ">
+                    
+<div class="carousel">
+    <a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2" target="_blank">
+        <img src="/./img/head-img.jpg" alt="">
+    </a>
+</div>
 
 
 
 
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/10/27/%E5%88%A9%E7%94%A8python%E4%BF%AE%E6%94%B9%E5%9B%BE%E7%89%87%E5%90%8D%E7%A7%B0%E4%B8%BA%E6%97%B6%E9%97%B4/">
+                    利用python修改图片名称为时间</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年10月27日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            python知识点
+python文件夹里的”__ init __.py”文件的作用
 
-<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>typora 快捷键</p>
-<p>无序列表:输入-之后输入空格</p>
-<p>有序列表:输入数字+“.”之后输入空格</p>
-<p>任务列表:-[空格]空格 文字</p>
-<p>标题:ctrl+数字</p>
-<p>表格:ctrl+t</p>
-<p>生成目录:[TOC]按回车</p>
-<p>选中一整行:<em>ctrl+l</em></p>
-<p>选中单词:ctrl+d</p>
-<p>选中相同格式的文字:ctrl+e</p>
-<p>跳转到文章开头:ctrl+home</p>
-<p>跳转到文章结尾:ctrl+end</p>
-<p>搜索:ctrl+f</p>
-<p>替换:ctrl+h</p>
-<p>引用:输入&gt;之后输入空格</p>
-<p>代码块:ctrl+alt+f </p>
-<p>加粗:<strong>ctrl+b</strong></p>
-<p>倾斜:<em>ctrl+i</em></p>
-<p>下划线:<u>ctrl+u</u></p>
-<p>删除线:<del>alt+shift+5</del></p>
-<p>插入图片:直接拖动到指定位置即可或者ctrl+shift+i</p>
-<p>插入链接:ctrl+k</p>
-<p>About Typora–关于 Typora</p>
-<p>Preferences–偏好(设置)–⌘，</p>
-<p>Check for Updates–检查更新</p>
-<p>Services–服务</p>
-<p>Hide Typora–隐藏 Typora–⌘H</p>
-<p>Hide Other–隐藏 Other–⌥⌘H</p>
-<p>Show All–显示全部</p>
-<p>Quit Typora–退出 Typora–⌘Q</p>
-<p>File–文件</p>
-<p>New–新建–⌘N</p>
-<p>Open..–打开 .–⌘O</p>
-<p>Open Recent–打开最近</p>
-<p>Open Quickly…–快速打开–⇧⌘O</p>
-<p>Open File Location–打开文件位置</p>
-<p>Close–关闭–⌘W</p>
-<p>Save…–保存–⌘S</p>
-<p>Duplicate–另存为–⇧⌘S</p>
-<p>Rename–重命名</p>
-<p>Move To…–移动到</p>
-<p>Revert To–恢复</p>
-<p>Export–输出</p>
-<p>Page Setup…–页面设置–⇧⌘P</p>
-<p>Print…–打印–⌘P</p>
-<p>Edit–编辑</p>
-<p>Undo–撤消–⌘Z</p>
-<p>Redo–重做–⌘Y</p>
-<p>Cut–剪切–⌘X</p>
-<p>Copy–复制–⌘C</p>
-<p>Paste–黏贴–⌘V</p>
-<p>Delete–删除</p>
-<p>Copy As Markdown–另存为Markdown–⇧⌘C</p>
-<p>Copy As HTML Code–另存为超链接代码–⌥⌘C</p>
-<p>Paste As Plain Text–另存为纯文本–⇧⌘V</p>
-<p>Select All–全选–⌘A</p>
-<p>Select Line/Sentence–选择行/句子–⌘L</p>
-<p>Select Styled Scope–选择段落–⌘E</p>
-<p>Select Word–选定单词–⌘D</p>
-<p>Jump To–跳到…()</p>
-<p>Math Tools–数学工具</p>
-<p>Image Tools–图片工具</p>
-<p>Find–寻找</p>
-<p>Spelling and Grammar–拼写和语法</p>
-<p>Substitutions–替换</p>
-<p>Speech–语音</p>
-<p>Start Dictation…–开始听写</p>
-<p>Emoji &amp; Symbosls–表情 &amp; 符号–⌃⌘Space</p>
-<p>Paragraph–段落</p>
-<p>Heading 1–标题1–⌘1</p>
-<p>Heading 2–标题2–⌘2</p>
-<p>Heading 3–标题3–⌘3</p>
-<p>Heading 4–标题4–⌘4</p>
-<p>Heading 5–标题5–⌘5</p>
-<p>Paragraph–段落–⌘0</p>
-<p>Table–表格–⌘T</p>
-<p>Code Fences–代码栏–⌥⌘C</p>
-<p>Math Block–数字块–⌥⌘B</p>
-<p>Quote–引用–⌥⌘Q</p>
-<p>Ordered List–顺序列表–⌥⌘O</p>
-<p>Unordered List–无序列表–⌥⌘U</p>
-<p>Task List–任务列表–⌥⌘X</p>
-<p>List Indentation–列表缩进</p>
-<p>Link Reference–参考链接–⌥⌘L</p>
-<p>Footnotes–脚注–⌥⌘R</p>
-<p>Horizontal Line–水平线–⇧⌘-</p>
-<p>Table of Contents–目录</p>
-<p>YAML Front Matter</p>
-<p>Format–格式</p>
-<p>Strong–粗体–⌘B</p>
-<p>Emphasis–重点(倾斜)–⌘I</p>
-<p>Underline–下划线–⌘U</p>
-<p>Code–代码–⇧⌘`</p>
-<p>Strike–中划线–⌃~</p>
-<p>Comment–评论</p>
-<p>Hyperlink–超链接–⌘K</p>
-<p>Image–图片–⌥⌘I</p>
-<p>Clear Format–清除格式–⌘\</p>
-<p>View–查看</p>
-<p>Source Code Mode–源代码模式–⌘/</p>
-<p>Focus Mode–聚焦模式–⇧⌘R</p>
-<p>Typewriter Mode–打字机模式</p>
-<p>Toggle Outine Panel–面板切换–⇧⌘B</p>
-<p>Always On Top–总是在上面</p>
-<p>Full Screen–全屏–⌃⌘F</p>
-<p>Window–窗口</p>
-<p>Minimize–最小化–⌘M</p>
-<p>Zoom–变焦(伪全屏)<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">   st=>start: 开始框
-   op=>operation: 处理框
-   cond=>condition: 判断框(是或否?)
-   sub1=>subroutine: 子流程
-   io=>inputoutput: 输入输出框
-   e=>end: 结束框
-   st->op->cond
-   cond(yes)->io->e
-   cond(no)->sub1(right)->op</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><textarea id="flowchart-1-code" style="display: none">   st=>start: 开始框
-   op=>operation: 处理框
-   cond=>condition: 判断框(是或否?)
-   sub1=>subroutine: 子流程
-   io=>inputoutput: 输入输出框
-   e=>end: 结束框
-   st(right)->op(right)->cond
-   cond(yes)->io(bottom)->e
-   cond(no)->sub1(right)->op</textarea><textarea id="flowchart-1-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-1-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-1-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-1", options);</script></p>
-</div><div class="index-category-tag">  </div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/page/0/">上一页</a></div><div class="pagination-next"><a href="/page/2/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><!--!--><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="is-rounded" src="/img/avatar.png" alt="时遇诺"></figure><p class="title is-size-4 is-block line-height-inherit">时遇诺</p><p class="is-size-6 is-block">尚未执佩剑，转眼即江湖</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>china</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://weibo.com/u/3050419984" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Weibo" href="https://weibo.com/u/3050419984"><i class="fab fa-weibo"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:removeif@163.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Next" href="https://removeif.github.io/remove.io"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget"><div class="card-content"><h3 class="menu-label">最新评论</h3><span class="body_hot_comment">加载中，最新评论有1分钟缓存...</span></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:45:30.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/">JDBC--oracle数据库</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:44:22.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/">javaSE复习3</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:42:58.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/">javaSE复习2</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:38:46.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/">javaSE复习</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-16T12:56:12.000Z">2020-04-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/">数据库初级学习</a></p><p class="is-uppercase"></p></div></article></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/02/"><span class="level-start"><span class="level-item">二月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/01/"><span class="level-start"><span class="level-item">一月 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/12/"><span class="level-start"><span class="level-item">十二月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=removeifFeedsId&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="removeifFeedsId" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="订阅"></div></div><p class="help">输入邮箱开始订阅，更博后邮件通知！</p></form></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="lvv&#039;s blog" height="28"></a><p class="size-small"><span>&copy; 2020 lvv</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">removeif</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
-            var n = new Date(time);
-            now.setTime(now.getTime() + 250),
-                days = (now - n) / 1e3 / 60 / 60 / 24,
-                dnum = Math.floor(days),
-                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
-                hnum = Math.floor(hours),
-            1 == String(hnum).length && (hnum = "0" + hnum),
-                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
-                mnum = Math.floor(minutes),
-            1 == String(mnum).length && (mnum = "0" + mnum),
-                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
-                snum = Math.round(seconds),
-            1 == String(snum).length && (snum = "0" + snum),
-                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
-        }var now = new Date();setInterval("createTime('2018/11/11 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️感谢 <strong><span id="busuanzi_value_site_uv">99+</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></div></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif"><i class="fab fa-github"></i></a></p></div><div class="sideMusic"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="/js/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><meting-js style="width: auto;height: 2000px;" server="netease" type="playlist" id="2364053447" theme="#2980b9" loop="all" autoplay="false" order="list" storageName="aplayer-setting" lrctype="0" list-max-height="400px" fixed="true"></meting-js></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
-            site: {
-                url: 'http://lvwi.github.io',
-                external_link: {"enable":true,"exclude":[]}
-            },
-            article: {
-                highlight: {
-                    clipboard: true,
-                    fold: 'unfolded'
-                }
-            }
-        };</script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back-to-top.js" defer></script><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><!--!--><!--!--><!--!--><script src="/js/toc.js" defer></script><script src="/js/main.js" defer></script><script>$.getScript('/js/comment-issue-data.js',function(){loadIssueData('46a9f3481b46ea0129d8','79c7c9cb847e141757d7864453bcbf89f0655b24','时遇诺','blog_comment',false);})</script><link rel="stylesheet" href="/css/insight.css"><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"></div></div></div></div><script>(function (window) {
-            var INSIGHT_CONFIG = {
-                TRANSLATION: {
-                    POSTS: '文章',
-                    PAGES: '页面',
-                    CATEGORIES: '分类',
-                    TAGS: '标签',
-                    UNTITLED: '(无标题)',
-                },
-                CONTENT_URL: '/content.json',
-            };
-            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-        })(window);</script><script src="/js/insight.js" defer></script></body></html>
+python中package的标识，它可以什么也不定义；可以只是一个空文件，但是必须存在，不能删除。
+
+我们可以在__ init__.py导入我们需...
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/10/27/%E5%88%A9%E7%94%A8python%E4%BF%AE%E6%94%B9%E5%9B%BE%E7%89%87%E5%90%8D%E7%A7%B0%E4%B8%BA%E6%97%B6%E9%97%B4/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                    JDBC--oracle数据库</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年04月23日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            
+摘要JDBC–oracle数据库…
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/">
+                    javaSE复习3</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年04月23日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            
+摘要javaSE复习3…
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/">
+                    javaSE复习2</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年04月23日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            
+摘要javaSE复习2…
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/">
+                    javaSE复习</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年04月23日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            
+摘要javaSE复习-20190416…
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-media">
+        <a href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/">
+            <img class="img-ajax" src="/img/loading.gif" data-src="/./images/%E6%8D%95%E8%8E%B7%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8.jpg" alt="数据库初级学习">
+        </a>
+    </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/">
+                    数据库初级学习</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年04月16日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            数据库学习-20200415plsql开发plsql块123456789101112131415161718192021声明部分:DECLARE – 可选部分变量、常量、游标、用户定义异常声明;	v_total_sal	NUMBER(...
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/04/14/erp%E5%AD%A6%E4%B9%A0-0/">
+                    erp学习</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年04月14日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            ERP学习plsql
+plsql连接oracle数据库
+待补充
+
+报错:ORA-12425
+
+
+plsql快捷键
+
+输入完语句后, 点左上角齿轮执行(注:不选中需要执行的语句将,执行全部语句), 或者F8 快捷键
+
+查询结果界面的绿色...
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/04/14/erp%E5%AD%A6%E4%B9%A0-0/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-media">
+        <a href="/2020/02/13/hexo%E4%B8%BB%E9%A2%98%E5%88%9B%E5%BB%BA%E5%AD%A6%E4%B9%A0/">
+            <img class="img-ajax" src="/img/loading.gif" data-src="/%E4%B8%BB%E4%BD%93%E6%A1%86%E6%9E%B6.jpg" alt="hexo主题创建学习">
+        </a>
+    </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/02/13/hexo%E4%B8%BB%E9%A2%98%E5%88%9B%E5%BB%BA%E5%AD%A6%E4%B9%A0/">
+                    hexo主题创建学习</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年02月13日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            hexo主题创建学习-20200119一.  创建blog&amp;gt; 1. hexo是什么
+&amp;gt;
+&amp;gt;    Hexo 是一款能将Markdown文件编译成html 静态文件，可以提供 Web服务，做Blog，使其能部署到git...
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/02/13/hexo%E4%B8%BB%E9%A2%98%E5%88%9B%E5%BB%BA%E5%AD%A6%E4%B9%A0/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/">
+                    20200107微信小程序新建表格,并添加点击数据跳转页面功能</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年01月07日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            微信小程序新建表格,并添加点击数据跳转页面功能一 . 新建表格
+在wxss的页面中添加如下样式,样式数据可自行调整
+
+12345678910111213141516171819202122232425262728293031.tabl...
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/">
+                    学习如何更换blog的主题</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年01月04日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            2020年1月4号 学习如何更换blog的主题第一步 找到喜欢的主题
+使用命令 $ git clone 主题的地址  ，注意主题要clone到blog文件夹中的themes文件夹内
+
+第二步  修改配置文件并安装
+git克隆完成后，打...
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+
+<nav class="pagination" role="navigation">
+    <div id="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&#39;fa fa-angle-right&#39;&gt;&lt;&#x2F;i&gt;</a>
+    </div>
+</nav>
+
+                </main>
+                
+                    
+<aside class="col-md-4 sidebar">
+    
+    
+<div class="widget">
+    <h3 class="title">
+        搜索
+    </h3>
+    <div id="search-form">
+        <div id="result-mask" class="hide"></div>
+        <div class="search-area">
+            
+            <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢？">
+            <button type="button" class="search-form-submit" id="search-local">
+                站内搜索</button>
+            
+            
+        </div>
+        <div id="result-wrap" class="hide">
+            <div id="search-result"></div>
+        </div>
+        <div class="hide">
+            <template id="search-tpl">
+                <div class="item">
+                    <a href="/{path}" title="{title}">
+                        <div class="title">{title}</div>
+                        <div class="content">{content}</div>
+                    </a>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        网站公告
+    </h3>
+    <div class="notification">
+        <p>
+    主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
+    主题使用：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
+    支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers" target="_blank" rel="noopener">Star一下</a>
+</p>
+    </div>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        社交
+    </h3>
+    <div class="content social">
+        
+        <a href="//github.com/shenliyang" rel="external nofollow" title="Github" target="_blank">
+            <i class="git fa fa-git"></i>
+        </a>
+        
+        <a href="mailto:snippet@91h5.cc" rel="external nofollow" title="邮箱" target="_blank">
+            <i class="envelope-o fa fa-envelope-o"></i>
+        </a>
+        
+        <a href="/" rel="external nofollow" title="联系QQ" target="_blank">
+            <i class="qq fa fa-qq"></i>
+        </a>
+        
+        <a href="/" rel="external nofollow" title="微信" target="_blank">
+            <i class="weixin fa fa-weixin"></i>
+        </a>
+        
+        <a href="/" rel="external nofollow" title="QQ群" target="_blank">
+            <i class="users fa fa-users"></i>
+        </a>
+        
+        <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
+            <i class="feed fa fa-feed"></i>
+        </a>
+        
+    </div>
+</div>
+
+    
+    
+    
+    
+<div class="widget">
+    <h3 class="title">
+        归档
+    </h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/"><i class="fa" aria-hidden="true">2020年10月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/"><i class="fa" aria-hidden="true">2020年04月</i></a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/"><i class="fa" aria-hidden="true">2020年02月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/"><i class="fa" aria-hidden="true">2020年01月</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/"><i class="fa" aria-hidden="true">2019年12月</i></a><span class="archive-list-count">2</span></li></ul>
+</div>
+
+    
+    
+    
+    
+<div class="widget">
+    <h3 class="title">
+        友链
+    </h3>
+    <div class="content friends-link">
+        
+        <a href="https://hexo.io/zh-cn/" class="fa" target="_blank">
+            Hexo官网</a>
+        
+    </div>
+</div>
+
+    
+</aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/search.js?rev=@@hash.js"></script>
+
+
+
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>

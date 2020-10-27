@@ -1,5 +1,197 @@
-<!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>javaSE复习 - lvv&#039;s blog</title><meta description="摘要javaSE复习-20190416"><meta property="og:type" content="article"><meta property="og:title" content="javaSE复习"><meta property="og:url" content="http://lvwi.github.io/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/"><meta property="og:site_name" content="时遇诺"><meta property="og:description" content="摘要javaSE复习-20190416"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2020-04-23T11:38:46.000Z"><meta property="article:modified_time" content="2020-04-23T11:40:39.975Z"><meta property="article:author" content="时遇诺"><meta property="article:tag" content="categories-java"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="http://lvwi.github.io/img/avatar.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://lvwi.github.io/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/"},"headline":"javaSE复习","image":["http://lvwi.github.io/img/avatar.png"],"datePublished":"2020-04-23T11:38:46.000Z","dateModified":"2020-04-23T11:40:39.975Z","author":{"@type":"Person","name":"removeif"},"description":"摘要javaSE复习-20190416"}</script><link rel="alternative" href="/atom.xml" title="lvv&#039;s blog" type="application/atom+xml"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="/css/style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><script src="/js/md5.min.js"></script><link rel="stylesheet" href="/live2d/waifu.css"><script type="text/javascript" async src="/live2d/autoload.js"></script></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="lvv&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/media">影音</a><a class="navbar-item" href="/album">相册</a><a class="navbar-item" href="/friend">友链</a><a class="navbar-item" href="/self-talking">碎碎念</a><a class="navbar-item" href="/message">留言</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-04-23T11:38:46.000Z">2020-04-23</time><a class="commentCountImg" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/#comment-container"><span class="display-none-class">242e67a33da4c8922cd0da2af968ab52</span><img class="not-gallery-item" src="/img/chat.svg"> <span class="commentCount" id="242e67a33da4c8922cd0da2af968ab52"> 99+</span>    </a><span class="level-item">12 分钟 读完 (大约 1863 个字)</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">javaSE复习</h1><div class="content"><blockquote>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="lvv&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://lvwi.github.io">
+    <!--SEO-->
+
+<meta name="keywords" content="{{ page.keywords }}" />
+
+
+<meta name="description" content="
+摘要javaSE复习-20190416
+
+
+java语言特性
+简单的
+分布式的
+面向对象的
+多线程的
+解释性语言
+安全的
+可移植的
+高性能的
+动态的
+
+java环境配置windows
+安装jd..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    javaSE复习 |
+    
+    lvv&#39;s blog
+</title>
+
+<link rel="alternate" href="/atom.xml" title="lvv&#39;s blog" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='lvv'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://lvwi.github.io">
+                        lvv&#39;s blog</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/工具/"><i class="fa "></i>
+                                工具</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="javaSE复习">
+            
+            javaSE复习
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2020/04/23</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <blockquote>
 <p>摘要<br>javaSE复习-20190416</p>
 <a id="more"></a>
 
@@ -161,7 +353,7 @@
 <p>转义序列: \t   \n   \r  \b   \f</p>
 <p>方法</p>
 <h3 id="String类"><a href="#String类" class="headerlink" title="String类"></a>String类</h3><p>String 类是不可改变的，所以你一旦创建了 String 对象，那它的值就无法改变了（详看笔记部分解析）。</p>
-<p>如果需要对字符串做很多修改，那么应该选择使用 <a href="https://www.runoob.com/java/java-stringbuffer.html">StringBuffer &amp; StringBuilder 类</a></p>
+<p>如果需要对字符串做很多修改，那么应该选择使用 <a href="https://www.runoob.com/java/java-stringbuffer.html" target="_blank" rel="noopener">StringBuffer &amp; StringBuilder 类</a></p>
 <p>方法: String.length();  长度    String.concat(string2)  连接字符串, 也可以用 string+string</p>
 <p>创建格式化字符串 :静态方法 format() 返回一个String 对象</p>
 <h3 id="StringBuffer类和StringBuilder类"><a href="#StringBuffer类和StringBuilder类" class="headerlink" title="StringBuffer类和StringBuilder类"></a>StringBuffer类和StringBuilder类</h3><p>当对字符串进行修改的时候用 ; 此类的对象可被多次修改且不创建新的对象</p>
@@ -170,102 +362,120 @@
 <p>append()</p>
 </blockquote>
 <p>参考文章:<br><a href="">参考链接</a></p>
-</div><ul class="post-copyright"><li><strong>本文标题：</strong><a href="http://lvwi.github.io/2020/04/23/javaSE复习/">javaSE复习</a></li><li><strong>本文作者：</strong><a href="http://lvwi.github.io">lvv</a></li><li><strong>本文链接：</strong><a href="http://lvwi.github.io/2020/04/23/javaSE复习/">http://lvwi.github.io/2020/04/23/javaSE复习/</a></li><li><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</span></li></ul><div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 相关文章</span><br><span>  1.<a class="is-size-6" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/" target="_blank">JDBC--oracle数据库</a><br></span><span>  2.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/" target="_blank">javaSE复习3</a><br></span><span>  3.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/" target="_blank">javaSE复习2</a><br></span><span>  4.<a class="is-size-6" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/" target="_blank">数据库初级学习</a><br></span><span>  5.<a class="is-size-6" href="/2020/04/14/erp%E5%AD%A6%E4%B9%A0-0/" target="_blank">erp学习</a><br></span><span>  6.<a class="is-size-6" href="/2020/02/13/hexo%E4%B8%BB%E9%A2%98%E5%88%9B%E5%BB%BA%E5%AD%A6%E4%B9%A0/" target="_blank">hexo主题创建学习</a><br></span><span>  7.<a class="is-size-6" href="/2020/01/07/20200107%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%B0%E5%BB%BA%E8%A1%A8%E6%A0%BC-%E5%B9%B6%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E6%95%B0%E6%8D%AE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E5%8A%9F%E8%83%BD/" target="_blank">20200107微信小程序新建表格,并添加点击数据跳转页面功能</a><br></span><span>  8.<a class="is-size-6" href="/2020/01/04/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E6%9B%B4%E6%8D%A2blog%E7%9A%84%E4%B8%BB%E9%A2%98/" target="_blank">学习如何更换blog的主题</a><br></span></div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 推荐文章</span><br><span>  1.<a class="is-size-6" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/" target="_blank">JDBC--oracle数据库</a><br></span><span>  2.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/" target="_blank">javaSE复习</a><br></span><span>  3.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/" target="_blank">javaSE复习2</a><br></span><span>  4.<a class="is-size-6" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/" target="_blank">javaSE复习3</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button is-info donate"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://raw" alt="支付宝"></span></a><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://raw" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">javaSE复习2</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/"><span class="level-item">数据库初级学习</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/gitalk/1.6.0/gitalk.css"><script> $.getScript('/js/gitalk.min.js', function () { 
-            var gitalk = new Gitalk({
-            id: '242e67a33da4c8922cd0da2af968ab52',
-            repo: 'blog_comment',
-            owner: '时遇诺',
-            clientID: '46a9f3481b46ea0129d8',
-            clientSecret: '79c7c9cb847e141757d7864453bcbf89f0655b24',
-            admin: ["时遇诺"],
-            createIssueManually: true,
-            distractionFreeMode: false,
-            perPage: 10,
-            pagerDirection: 'last',
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
             
             
-            enableHotKey: true,
-            isLocked: false
-        })
-        gitalk.render('comment-container')});</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget toc-scroll" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-java语言特性" href="#java语言特性"><span>java语言特性</span></a></li><li><a class="is-flex toc-item" id="toc-item-java环境配置" href="#java环境配置"><span>java环境配置</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-windows" href="#windows"><span>windows</span></a></li><li><a class="is-flex toc-item" id="toc-item-linux" href="#linux"><span>linux</span></a></li><li><a class="is-flex toc-item" id="toc-item-ide工具" href="#ide工具"><span>ide工具</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java基础语法" href="#java基础语法"><span>java基础语法</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-实例变量" href="#实例变量"><span>实例变量</span></a></li><li><a class="is-flex toc-item" id="toc-item-方法" href="#方法"><span>方法</span></a></li><li><a class="is-flex toc-item" id="toc-item-对象" href="#对象"><span>对象</span></a></li><li><a class="is-flex toc-item" id="toc-item-类" href="#类"><span>类</span></a></li><li><a class="is-flex toc-item" id="toc-item-基本语法" href="#基本语法"><span>基本语法</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java对象和类" href="#java对象和类"><span>java对象和类</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-基本概念" href="#基本概念"><span>基本概念</span></a></li><li><a class="is-flex toc-item" id="toc-item-对象-1" href="#对象-1"><span>对象</span></a></li><li><a class="is-flex toc-item" id="toc-item-类-1" href="#类-1"><span>类</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java-的基本数据类型" href="#java-的基本数据类型"><span>java 的基本数据类型</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-内置数据类型" href="#内置数据类型"><span>内置数据类型</span></a></li><li><a class="is-flex toc-item" id="toc-item-引用数据类型" href="#引用数据类型"><span>引用数据类型</span></a></li><li><a class="is-flex toc-item" id="toc-item-常量" href="#常量"><span>常量</span></a></li><li><a class="is-flex toc-item" id="toc-item-自动类型转换" href="#自动类型转换"><span>自动类型转换</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java变量类型" href="#java变量类型"><span>java变量类型</span></a></li><li><a class="is-flex toc-item" id="toc-item-java修饰符" href="#java修饰符"><span>java修饰符</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-访问类修饰符" href="#访问类修饰符"><span>访问类修饰符</span></a></li><li><a class="is-flex toc-item" id="toc-item-非访问类修饰符" href="#非访问类修饰符"><span>非访问类修饰符</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java运算符" href="#java运算符"><span>java运算符</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-位运算符" href="#位运算符"><span>位运算符</span></a></li><li><a class="is-flex toc-item" id="toc-item-三元运算符" href="#三元运算符"><span>三元运算符</span></a></li><li><a class="is-flex toc-item" id="toc-item-instanceof-运算符" href="#instanceof-运算符"><span>instanceof 运算符</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java循环语句" href="#java循环语句"><span>java循环语句</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-while" href="#while"><span>while</span></a></li><li><a class="is-flex toc-item" id="toc-item-for" href="#for"><span>for</span></a></li><li><a class="is-flex toc-item" id="toc-item-break" href="#break"><span>break</span></a></li><li><a class="is-flex toc-item" id="toc-item-continue" href="#continue"><span>continue</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-java条件语句" href="#java条件语句"><span>java条件语句</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-if—else" href="#if—else"><span>if—else</span></a></li><li><a class="is-flex toc-item" id="toc-item-switch-case" href="#switch-case"><span>switch case</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-number类和math类" href="#number类和math类"><span>number类和math类</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-包装类" href="#包装类"><span>包装类</span></a></li></ul></li><li><a class="is-flex toc-item" id="toc-item-Character类" href="#Character类"><span>Character类</span></a></li><li><a class="is-flex toc-item" id="toc-item-String类" href="#String类"><span>String类</span></a></li><li><a class="is-flex toc-item" id="toc-item-StringBuffer类和StringBuilder类" href="#StringBuffer类和StringBuilder类"><span>StringBuffer类和StringBuilder类</span></a><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-两者区别" href="#两者区别"><span>两者区别</span></a></li></ul></li></ul></div></div><script type="text/javascript" async>
-        $(document).ready(function () { //参考自 https://github.com/ppoffice/hexo-theme-icarus/pull/616/files
-            var observerTopMargin;
-            var scrollObserver;
-            var headerElems = $(".headerlink");
-            var activeTocItem;
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    <a href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/" class="pre-post btn btn-default" title='javaSE复习2'>
+        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+        <span class="hidden-xs">
+            javaSE复习2</span>
+    </a>
+    
+    
+    <a href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/" class="next-post btn btn-default" title='数据库初级学习'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            数据库初级学习</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+    appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
+
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
         
-            function initIntersectionObserver(docHeight) {
-                observerTopMargin = docHeight;
-                scrollObserver = new IntersectionObserver(scrollCallBack,
-                    {
-                        root: null,  // viewpoint
-                        rootMargin: docHeight + "px 0px -80% 0px"  // cover top 30% of viewport to the top of document
-                    })
-            }
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#java语言特性"><span class="toc-text">java语言特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java环境配置"><span class="toc-text">java环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#windows"><span class="toc-text">windows</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#linux"><span class="toc-text">linux</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ide工具"><span class="toc-text">ide工具</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java基础语法"><span class="toc-text">java基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实例变量"><span class="toc-text">实例变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法"><span class="toc-text">方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对象"><span class="toc-text">对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#类"><span class="toc-text">类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#基本语法"><span class="toc-text">基本语法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java对象和类"><span class="toc-text">java对象和类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本概念"><span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对象-1"><span class="toc-text">对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#类-1"><span class="toc-text">类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java-的基本数据类型"><span class="toc-text">java 的基本数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#内置数据类型"><span class="toc-text">内置数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引用数据类型"><span class="toc-text">引用数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常量"><span class="toc-text">常量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自动类型转换"><span class="toc-text">自动类型转换</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java变量类型"><span class="toc-text">java变量类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java修饰符"><span class="toc-text">java修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#访问类修饰符"><span class="toc-text">访问类修饰符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#非访问类修饰符"><span class="toc-text">非访问类修饰符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java运算符"><span class="toc-text">java运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#位运算符"><span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三元运算符"><span class="toc-text">三元运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#instanceof-运算符"><span class="toc-text">instanceof 运算符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java循环语句"><span class="toc-text">java循环语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#while"><span class="toc-text">while</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#for"><span class="toc-text">for</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#break"><span class="toc-text">break</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#continue"><span class="toc-text">continue</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#java条件语句"><span class="toc-text">java条件语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#if—else"><span class="toc-text">if—else</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#switch-case"><span class="toc-text">switch case</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number类和math类"><span class="toc-text">number类和math类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#包装类"><span class="toc-text">包装类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Character类"><span class="toc-text">Character类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String类"><span class="toc-text">String类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringBuffer类和StringBuilder类"><span class="toc-text">StringBuffer类和StringBuilder类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#两者区别"><span class="toc-text">两者区别</span></a></li></ol></li></ol>
         
-            function scrollCallBack(entries, observer) {
-                if ($(window).scrollTop() > observerTopMargin * 0.7) { 
-                    // User somehow scroll to 70% of observerTopMargin (which is inited as 200% document height)
-                    // Observer top margin need to extend to cover all the space to the top of the document
-                    initIntersectionObserver(observerTopMargin * 2)
-                    observer.disconnect();
-                    return;
-                }
-                let toActive;
-                if (entries[0].intersectionRatio == 1) {  // enter viewed area
-                    let entry = entries.reduce((u, v) => (u.target.toc_id > v.target.toc_id ? u : v));  // get the lowest item
-                    toActive = $("#toc-item-" + $(entry.target).attr("href").substr(1));
-                } else {
-                    let entry = entries.reduce((u, v) => (u.target.toc_id < v.target.toc_id ? u : v));  // get the highest item
-                    let idx = Math.max(entry.target.toc_id - 1, 0);
-                    toActive = $("#toc-item-" + $(headerElems[idx]).attr("href").substr(1));
-                }
-                if (activeTocItem) activeTocItem.removeClass("is-current");
-                activeTocItem = toActive
-                activeTocItem.addClass("is-current");
-            }
-        
-            initIntersectionObserver($(document).height() * 2);
-            headerElems.each(function (index, obj) {
-                obj.toc_id = index;
-                scrollObserver.observe(obj);
-            })
-        });</script></div><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="is-rounded" src="/img/avatar.png" alt="时遇诺"></figure><p class="title is-size-4 is-block line-height-inherit">时遇诺</p><p class="is-size-6 is-block">尚未执佩剑，转眼即江湖</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>china</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://weibo.com/u/3050419984" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/removeif"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Weibo" href="https://weibo.com/u/3050419984"><i class="fab fa-weibo"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:removeif@163.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Next" href="https://removeif.github.io/remove.io"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新评论</h3><span class="body_hot_comment">加载中，最新评论有1分钟缓存...</span></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:45:30.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/JDBC-oracle%E6%95%B0%E6%8D%AE%E5%BA%93/">JDBC--oracle数据库</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:44:22.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A03/">javaSE复习3</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:42:58.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A02/">javaSE复习2</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-23T11:38:46.000Z">2020-04-23</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/23/javaSE%E5%A4%8D%E4%B9%A0/">javaSE复习</a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-04-16T12:56:12.000Z">2020-04-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/04/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E7%BA%A7%E5%AD%A6%E4%B9%A0/">数据库初级学习</a></p><p class="is-uppercase"></p></div></article></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/02/"><span class="level-start"><span class="level-item">二月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/01/"><span class="level-start"><span class="level-item">一月 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2019/12/"><span class="level-start"><span class="level-item">十二月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=removeifFeedsId&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="removeifFeedsId" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="订阅"></div></div><p class="help">输入邮箱开始订阅，更博后邮件通知！</p></form></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="lvv&#039;s blog" height="28"></a><p class="size-small"><span>&copy; 2020 lvv</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/removeif/hexo-theme-amazing" target="_blank">removeif</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
-            var n = new Date(time);
-            now.setTime(now.getTime() + 250),
-                days = (now - n) / 1e3 / 60 / 60 / 24,
-                dnum = Math.floor(days),
-                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
-                hnum = Math.floor(hours),
-            1 == String(hnum).length && (hnum = "0" + hnum),
-                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
-                mnum = Math.floor(minutes),
-            1 == String(mnum).length && (mnum = "0" + mnum),
-                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
-                snum = Math.round(seconds),
-            1 == String(snum).length && (snum = "0" + snum),
-                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
-        }var now = new Date();setInterval("createTime('2018/11/11 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️感谢 <strong><span id="busuanzi_value_site_uv">99+</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></div></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/removeif"><i class="fab fa-github"></i></a></p></div><div class="sideMusic"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="/js/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><meting-js style="width: auto;height: 2000px;" server="netease" type="playlist" id="2364053447" theme="#2980b9" loop="all" autoplay="false" order="list" storageName="aplayer-setting" lrctype="0" list-max-height="400px" fixed="true"></meting-js></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
-            site: {
-                url: 'http://lvwi.github.io',
-                external_link: {"enable":true,"exclude":[]}
-            },
-            article: {
-                highlight: {
-                    clipboard: true,
-                    fold: 'unfolded'
-                }
-            }
-        };</script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back-to-top.js" defer></script><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><!--!--><!--!--><!--!--><script src="/js/toc.js" defer></script><script src="/js/main.js" defer></script><script>$.getScript('/js/comment-issue-data.js',function(){loadIssueData('46a9f3481b46ea0129d8','79c7c9cb847e141757d7864453bcbf89f0655b24','时遇诺','blog_comment',false);})</script><link rel="stylesheet" href="/css/insight.css"><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"></div></div></div></div><script>(function (window) {
-            var INSIGHT_CONFIG = {
-                TRANSLATION: {
-                    POSTS: '文章',
-                    PAGES: '页面',
-                    CATEGORIES: '分类',
-                    TAGS: '标签',
-                    UNTITLED: '(无标题)',
-                },
-                CONTENT_URL: '/content.json',
-            };
-            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-        })(window);</script><script src="/js/insight.js" defer></script></body></html>
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>
