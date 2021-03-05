@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lvwi.github.io/"/>
-  <updated>2020-10-27T03:04:59.570Z</updated>
+  <updated>2021-03-05T07:17:04.992Z</updated>
   <id>http://lvwi.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python爬虫学习</title>
+    <link href="http://lvwi.github.io/2021/03/02/python%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95/"/>
+    <id>http://lvwi.github.io/2021/03/02/python%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95/</id>
+    <published>2021-03-02T07:50:15.000Z</published>
+    <updated>2021-03-05T07:17:04.992Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="python爬虫读取网页上的音频"><a href="#python爬虫读取网页上的音频" class="headerlink" title="python爬虫读取网页上的音频"></a>python爬虫读取网页上的音频</h1><h2 id="第一步-爬虫需要request模块-先导入"><a href="#第一步-爬虫需要request模块-先导入" class="headerlink" title="第一步  爬虫需要request模块,先导入"></a>第一步  爬虫需要request模块,先导入</h2><h2 id="第二步-代码编写"><a href="#第二步-代码编写" class="headerlink" title="第二步  代码编写"></a>第二步  代码编写</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># __*__coding=utf-8__*__</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line">url = <span class="string">"http://www.2uxs.com/play/2443_1_4785.html"</span></span><br><span class="line">urlEnd = <span class="string">"http://www.2uxs.com/play/2443_1_5538.html"</span></span><br><span class="line">downloadUrl = <span class="string">"https://t3344.tingchina.com/yousheng/都市言情/庶女攻略_悠然梦/050_烟火(上).mp3?key=542d0da969ddda686242fda6d7bb6ab5_668011838"</span></span><br><span class="line">downloadUrls = downloadUrl.split(<span class="string">"?"</span>)</span><br><span class="line">dU = downloadUrls[<span class="number">0</span>].split(<span class="string">"梦/"</span>)</span><br><span class="line"><span class="comment"># 截取网址信息</span></span><br><span class="line">urls = url.split(<span class="string">"_1_"</span>)</span><br><span class="line">num = urls[<span class="number">1</span>].split(<span class="string">"."</span>)</span><br><span class="line"><span class="comment"># print(urls[0], "_1_", num[0], ".", num[1])</span></span><br><span class="line"><span class="comment"># 遍历获取网址</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4785</span>, <span class="number">4786</span>):</span><br><span class="line">    <span class="comment"># 组合网址</span></span><br><span class="line">    newUrl = urls[<span class="number">0</span>]+<span class="string">"_1_"</span>+str(i) + <span class="string">"."</span>+ num[<span class="number">1</span>]</span><br><span class="line"><span class="comment">#    获取网页信息</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">'User-Agent'</span>:<span class="string">'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15'</span></span><br><span class="line">    &#125;</span><br><span class="line">    msg = requests.get(newUrl, headers)</span><br><span class="line">    <span class="comment"># 用bs4解析网页</span></span><br><span class="line">    soup = BeautifulSoup(msg.text, <span class="string">"lxml"</span>)</span><br><span class="line">    h1Name = soup.h1.string</span><br><span class="line">    voiceNname = str(h1Name).split(<span class="string">"："</span>)[<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># 获取当前网页播放的文件名称</span></span><br><span class="line">    print(voiceNname)</span><br><span class="line">    <span class="comment"># 获取下载的新网址</span></span><br><span class="line">    newDU = dU[<span class="number">0</span>] + <span class="string">"梦/"</span>+voiceNname+<span class="string">"?"</span>+downloadUrls[<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># voice = requests.get(newDU,headers)</span></span><br><span class="line">    print(newDU)</span><br><span class="line">    <span class="comment"># listA = soup.find_all("audio",&#123;"id": "jp_audio_0"&#125;)</span></span><br><span class="line">    <span class="comment"># print(listA)</span></span><br></pre></td></tr></table></figure><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol><li>网页中audio是在iframe框架中的, 获取的soup中没有此模块信息</li><li>换了方式, 根据下载链接的格式, 直接获取下载链接, 但是访问时无信息响应(是因为key超时的问题)</li><li>无法直接下载内容后, 想要批量获取下载链接,保存到表格中, 但是程序运行超过100回后,在后续会报错数组下标越界</li><li>无法解决下载链接中key会变的问题, 导致下载的时候报错404</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment"># voiceNname = str(h1Name).split("：")[1]</span></span><br><span class="line"><span class="comment"># IndexError: list index out of range</span></span><br></pre></td></tr></table></figure><p>处理方法一: 配置多个User-Agent, 多次会报错</p><h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>beautifulSoup的使用: 如何根据标签读取内容</p><blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;python爬虫读取网页上的音频&quot;&gt;&lt;a href=&quot;#python爬虫读取网页上的音频&quot; class=&quot;headerlink&quot; title=&quot;python爬虫读取网页上的音频&quot;&gt;&lt;/a&gt;python爬虫读取网页上的音频&lt;/h1&gt;&lt;h2 id=&quot;第一步-爬虫需要r
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>利用python修改图片名称为时间</title>
