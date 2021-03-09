@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lvwi.github.io/"/>
-  <updated>2021-03-05T07:17:04.992Z</updated>
+  <updated>2021-03-09T06:31:48.900Z</updated>
   <id>http://lvwi.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python常用函数备查.md</title>
+    <link href="http://lvwi.github.io/2021/03/08/python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%E5%A4%87%E6%9F%A5/"/>
+    <id>http://lvwi.github.io/2021/03/08/python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%E5%A4%87%E6%9F%A5/</id>
+    <published>2021-03-08T06:21:03.000Z</published>
+    <updated>2021-03-09T06:31:48.900Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>python常用函数<br>python常用的函数及操作</p><a id="more"></a></blockquote><ol><li><p>filter(function,list)</p><ul><li>filter()函数是python内置的另一个有用的高阶函数</li><li>filter()函数接收一个函数f和一个list,</li><li>这个函数f的作用是对每个元素进行判断,返回True或False</li><li>filter()根据判断结果自动过滤掉不符合条件的元素</li></ul></li><li><p>如何将python文件打包成exe<br> (1) 找到需要打包的文件所在文件夹<br> (2) win + r 进到cmd页面, 安装pip install pyinstaller<br> (3) cd 到刚才的文件夹路径下</p> <img src='ptyheon打包操作界面1' loading="lazy">   ![](images/python打包操作界面1.jpg)   (4) 输入命令 pyinstaller --console --onefile xxxx.py   (5) 生成成功，在工程目录下有一个dist文件夹</li><li><p>生成折线图等<br> (1)画图不支持中文,但是可以导入字体来解决,或者在用的时候设置</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span>  plt</span><br><span class="line"> <span class="comment"># 方法1</span></span><br><span class="line"><span class="comment"># fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径</span></span><br><span class="line">zhfont1 = matplotlib.font_manager.FontProperties(fname=<span class="string">"SourceHanSansSC-Bold.otf"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x 轴"</span>, fontproperties=zhfont1)  </span><br><span class="line"><span class="comment"># 方法2</span></span><br><span class="line">plt.xlabel(<span class="string">"x轴"</span>,fontproperties=<span class="string">"SimSun"</span>) <span class="comment">#宋体</span></span><br></pre></td></tr></table></figure></li><li><p>subplot()<br>subplot() 函数允许你在同一图中绘制不同的东西。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span>  plt</span><br><span class="line">x = np.arange(<span class="number">0</span>,  <span class="number">3</span>  * np.pi,  <span class="number">0.1</span>) </span><br><span class="line">y_sin = np.sin(x) </span><br><span class="line">y_cos = np.cos(x)</span><br><span class="line">plt.subplot(<span class="number">2</span>,  <span class="number">1</span>,  <span class="number">1</span>)  </span><br><span class="line"><span class="comment"># 绘制第一个图像 </span></span><br><span class="line">plt.plot(x, y_sin) </span><br><span class="line">plt.title(<span class="string">'Sine'</span>)  </span><br><span class="line"><span class="comment"># 将第二个 subplot 激活，并绘制第二个图像</span></span><br><span class="line">plt.subplot(<span class="number">2</span>,  <span class="number">1</span>,  <span class="number">2</span>) </span><br><span class="line">plt.plot(x, y_cos) </span><br><span class="line">plt.title(<span class="string">'Cosine'</span>)</span><br></pre></td></tr></table></figure><p>plt.bar()</p></li></ol><p>参考文章:<br><a href="https://www.runoob.com/numpy/numpy-matplotlib.html" target="_blank" rel="noopener">参考链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;python常用函数&lt;br&gt;python常用的函数及操作&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>python爬虫学习</title>
