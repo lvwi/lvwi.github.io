@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lvwi.github.io/"/>
-  <updated>2021-03-09T06:31:48.900Z</updated>
+  <updated>2021-03-29T08:18:47.710Z</updated>
   <id>http://lvwi.github.io/</id>
   
   <author>
@@ -17,13 +17,120 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>html标签复习</title>
+    <link href="http://lvwi.github.io/2021/03/29/html%E6%A0%87%E7%AD%BE%E5%A4%8D%E4%B9%A0/"/>
+    <id>http://lvwi.github.io/2021/03/29/html%E6%A0%87%E7%AD%BE%E5%A4%8D%E4%B9%A0/</id>
+    <published>2021-03-29T06:39:04.000Z</published>
+    <updated>2021-03-29T08:18:47.710Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>摘要<br><meta->标签  </p></blockquote><p>一. 标签的定义  </p><blockquote><p>用来为搜索引擎定义页面主题<br>    定义用户浏览器上的cookie<br>    可以用来鉴别作者<br>    设定页面格式<br>    标注内容提要和关键字</p></blockquote><p>二、标签属性  </p><blockquote><p>http-equiv：标题信息, 类似http头部协议,回应给浏览器一些信息,来正确显示网页内容</p></blockquote><table><thead><tr><th align="left">常用值</th><th align="left">功能</th><th align="left">使用</th></tr></thead><tbody><tr><td align="left">Content-Type</td><td align="left">设定字符集,说明页面用的文字及语言</td><td align="left">用法：&lt;Meta http-equiv=”Content-Type” Content=”text/html; Charset=gb2312”–&gt;</td></tr><tr><td align="left">Refresh</td><td align="left">刷新 让网页多长时间（秒）刷新自己，或在多长时间后让网页自动链接到其它网页</td><td align="left">Meta http-equiv=”Refresh” Content=”5; Url=<a href="http://www.xia8.net&quot;" target="_blank" rel="noopener">http://www.xia8.net&quot;</a></td></tr><tr><td align="left">Expires (期限)</td><td align="left">指定网页在缓存中的过期时间，一旦网页过期，必须到服务器上重新调阅</td><td align="left">Meta http-equiv=”Expires” Content=”Wed, 26 Feb 1997 08:21:57 GMT”</td></tr><tr><td align="left">Pragma (cach模式)</td><td align="left">禁止浏览器从本地机的缓存中调阅页面内容。</td><td align="left">Meta http-equiv=”Pragma” Content=”No-cach” 网页不保存在缓存中，每次访问都刷新页面。  这样设定，访问者将无法脱机浏览</td></tr><tr><td align="left">Set-Cookie</td><td align="left">设定cookie</td><td align="left">Meta http-equiv=”Set-Cookie” Content=”cookievalue=xxx; expires=Wednesday,21-Oct-98 16:14:21 GMT; path=/“</td></tr><tr><td align="left">Window-target</td><td align="left">显示窗口设定:强制页面在当前窗口以独立页面显示</td><td align="left">Meta http-equiv=”Widow-target” Content=”_top”   这个属性是用来防止别人在框架里调用你的页面。Content选项：_blank、_top、_self、_parent</td></tr><tr><td align="left">Pics-label (网页RSAC等级评定)</td><td align="left">防止浏览一些受限制的网站，而网站的限制级别就是通过该参数来设置的</td><td align="left">\META http-equiv=”Pics-label” Contect=”(PICS－1.1’http:\<a href="http://www.rsac.org\ratingsv01.html&#39;I" target="_blank" rel="noopener">www.rsac.org\ratingsv01.html&#39;I</a> gen comment ‘RSACi North America Sever’ by ‘inet@microsoft.com’ for ‘http:\<a href="http://www.microsoft.com&#39;" target="_blank" rel="noopener">www.microsoft.com&#39;</a> on ‘1997.06.30T14:21－0500’ r(n0 s0 v0 l0))”</td></tr><tr><td align="left">Page-Enter、Page-Exit (进入与退出)</td><td align="left">是页面被载入和调出时的一些特效</td><td align="left">Meta http-equiv=”Page-Enter” Content=”blendTrans(Duration=0.5) blendTrans是动态滤镜的一种，产生渐隐效果。  另一种动态滤镜RevealTrans也可以用于页面进入与退出效果 Meta http-equiv=”Page-Enter” Content=”revealTrans(duration=x : 持续时间, transition=y) :滤镜类型 0-23”</td></tr><tr><td align="left">Content-Script-Type (脚本相关)</td><td align="left">这是近来W3C的规范，指明页面中脚本的类型。</td><td align="left">Meta http-equiv=”Content-Script-Type” Content=”text/javascript”</td></tr></tbody></table><blockquote><p>name：页面描述信息<br>name是描述网页的，对应于Content（网页内容），以便于搜索引擎机器人查找、分类（目前几乎所有的搜索引擎都使用网上机器人自动查找meta值来给网页分类）<br>name的value值（name=””）指定所提供信息的类型。有些值是已经定义好的。例如description(说明)、keyword(关键字)、refresh(刷新)等。还可以指定其他任意值，如：creationdate(创建日期) 、document ID(文档编号)和level(等级)等。</p></blockquote><table><thead><tr><th align="left">常用值</th><th align="left">功能</th><th align="left">使用</th></tr></thead><tbody><tr><td align="left">Keywords (关键字)</td><td align="left">为搜索引擎提供的关键字列表</td><td align="left">Meta name=”Keywords” Lang=”EN” Content=”关键词1,关键词2，关键词3,关键词4,……” 当有多个meta指定关键词时,会根据lang的属性来进行区分</td></tr><tr><td align="left">Description (简介)</td><td align="left">Description用来告诉搜索引擎你的网站主要内容</td><td align="left">Meta name=”Description” Content=”你网页的简述”</td></tr><tr><td align="left">Robots (机器人向导)</td><td align="left">Robots用来告诉搜索机器人哪些页面需要索引，哪些页面不需要索引。Content的参数有all、none、index、noindex、follow、nofollow。默认是all。</td><td align="left">Meta name=”Robots” Content=”All\None\Index\Noindex\Follow\Nofollow”   “all：文件将被检索，且页面上的链接可以被查询；  none：文件将不被检索，且页面上的链接不可以被查询；(和 “noindex, no follow” 起相同作用)   index：文件将被检索；（让robot/spider登录）  follow：页面上的链接可以被查询；  noindex：文件将不被检索，但页面上的链接可以被查询；(不让robot/spider登录)  nofollow：文件将不被检索，页面上的链接可以被查询。(不让robot/spider顺着此页的连接往下探找)”</td></tr><tr><td align="left">Author (作者)</td><td align="left"></td><td align="left">Meta name=”Author” Content=”张三，<a href="mailto:abc@sina.com">abc@sina.com</a>“</td></tr><tr><td align="left">Copyright (版权)</td><td align="left"></td><td align="left">Meta name=”Copyright” Content=”本页版权归Zerospace所有。All Rights Reserved”</td></tr><tr><td align="left">Generator (编辑器)</td><td align="left"></td><td align="left">Meta name=”Generator” Content=”PCDATA\FrontPage&quot;</td></tr><tr><td align="left">revisit-after (重访)</td><td align="left"></td><td align="left">META name=”revisit-after” CONTENT=”7 days”</td></tr><tr><td align="left">Viewport</td><td align="left">用于在手机浏览器上控制布局,用于响应式设计</td><td align="left">Content=”width=device-width,initial-scale=1,maximum-scale=1″手机浏览器把页面放在一个虚拟的窗口(viewport)中,这样就不会把每个网页都挤在一个很小的窗口中,从而破坏哪些没有经过优化的页面布局.用户可以通过滑动和缩放来查看页面的内容.</td></tr></tbody></table><p>参考文章:<br><a href="">参考链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;摘要&lt;br&gt;&lt;meta-&gt;标签  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一. 标签的定义  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用来为搜索引擎定义页面主题&lt;br&gt;    定义用户浏览器上的cookie&lt;br&gt;    可以用来鉴别作者&lt;b
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>layui学习</title>
+    <link href="http://lvwi.github.io/2021/03/24/layui%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://lvwi.github.io/2021/03/24/layui%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-03-24T08:54:06.000Z</published>
+    <updated>2021-03-24T08:54:06.052Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>摘要<br>首页显示摘要内容（替换成自己的）</p><a id="more"></a><p>正文内容（替换成自己的）</p></blockquote><p>参考文章:<br><a href="">参考链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;摘要&lt;br&gt;首页显示摘要内容（替换成自己的）&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>java项目与python结合</title>
+    <link href="http://lvwi.github.io/2021/03/24/java%E9%A1%B9%E7%9B%AE%E4%B8%8Epython%E7%BB%93%E5%90%88/"/>
+    <id>http://lvwi.github.io/2021/03/24/java%E9%A1%B9%E7%9B%AE%E4%B8%8Epython%E7%BB%93%E5%90%88/</id>
+    <published>2021-03-24T08:53:37.000Z</published>
+    <updated>2021-03-26T07:55:50.585Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>摘要<br>java ,python</p><a id="more"></a><p>java与python结合</p></blockquote><ol><li>在java类中直接使用python语句  <blockquote><p>导入依赖: Jpython</p> <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.python&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;jython-standalone&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.7.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure></blockquote></li><li>在java类中创建interpreter ,但是引用不到, 要先建main方法 </li><li>或者用runtime.getRuntime().exec(调动python运行python文件),创建输入输出流进行</li></ol><p>参考文章:<br><a href="">参考链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;摘要&lt;br&gt;java ,python&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>复习maven及maven项目</title>
+    <link href="http://lvwi.github.io/2021/03/23/%E5%A4%8D%E4%B9%A0maven%E5%8F%8Ajava%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://lvwi.github.io/2021/03/23/%E5%A4%8D%E4%B9%A0maven%E5%8F%8Ajava%E9%A1%B9%E7%9B%AE/</id>
+    <published>2021-03-23T02:25:13.000Z</published>
+    <updated>2021-03-24T08:29:03.396Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>摘要<br>首页显示摘要内容（替换成自己的）</p><a id="more"></a><p>正文内容（替换成自己的）</p></blockquote><ol><li>maven  下载</li><li>maven  安装及本地仓库配置</li><li>maven  环境变量配置 新建M2_HOME 是maven的地址; path中配置: bin路径</li><li>maven  在idea中配置</li><li>maven  pom.xml的配置: <a href="http://mvnrepository.com/可到此网址中查询对应的工具" target="_blank" rel="noopener">http://mvnrepository.com/可到此网址中查询对应的工具</a></li><li>maven项目的配置  <blockquote><p>(1) webapp目录, 需要标记为web项目的资源目录(project Settings –&gt;moudles–&gt;新增web–&gt;设置web.xml目录; 设置项目webapp目录)<br> (2) artifact: 编译后的Java类，Web资源等的整合,用以测试、部署等工作:就是设置某个module的打包方式  </p><pre><code>module有了 Artifacts 就可以部署到应用服务器中 </code></pre></blockquote></li><li>打包方式:<br> jar：Java ARchive，通常用于聚合大量的Java类文件、相关的元数据和资源（文本、图片等）文件到一个文件，以便分发Java平台应用软件或库；<br> war：Web application ARchive，一种JAR文件，其中包含用来分发的JSP、Java Servlet、Java类、XML文件、标签库、静态网页（HTML和相关文件），以及构成Web应用程序的其他资源；<br> exploded：在这里你可以理解为展开，不压缩的意思。也就是war、jar等产出物没压缩前的目录结构。建议在开发的时候使用这种模式，便于修改了文件的效果立刻显现出来。       </li><li>idea配置数据库, 一直报错: Connection to practice@localhost failed. [08001] Could not create connection to database server. Attempted reconnect 3 times. Giving up.<br> 解决方法: 链接后面加上 ?useSSL=false&amp;serverTimezone=UTC </li><li>运行链接数据库报错: Connections could not be acquired from the underlying database!  ; java.sql.SQLException: No suitable driver<br> 发现是配置文件中数据库密码错误 以及 c3p0.xml的位置错误, 这个文件要放在java对应的resources里面<br>参考文章:<br><a href="https://blog.csdn.net/mmmxsblogs/article/details/89195859?ops_request_misc=&request_id=&biz_id=102&utm_term=ideanmaven%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-89195859.pc_search_result_cache" target="_blank" rel="noopener">IDEA详细配置并详细创建Maven项目 -(idea)</a><br><a href="https://blog.csdn.net/qq_32180027/article/details/70306158?utm_term=idea%E4%B8%AD%E9%85%8D%E7%BD%AEartifacts&utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~sobaiduweb~default-6-70306158&spm=3001.4430" target="_blank" rel="noopener">IDEA Artifacts配置说明</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;摘要&lt;br&gt;首页显示摘要内容（替换成自己的）&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python基础操作积累</title>
+    <link href="http://lvwi.github.io/2021/03/16/python%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E7%A7%AF%E7%B4%AF/"/>
+    <id>http://lvwi.github.io/2021/03/16/python%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%E7%A7%AF%E7%B4%AF/</id>
+    <published>2021-03-16T08:19:21.000Z</published>
+    <updated>2021-03-16T09:05:37.178Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>摘要<br>首页显示摘要内容（替换成自己的）</p><a id="more"></a><p>正文内容（替换成自己的）</p></blockquote><p>参考文章:<br><a href="">参考链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;摘要&lt;br&gt;首页显示摘要内容（替换成自己的）&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>python常用函数备查.md</title>
     <link href="http://lvwi.github.io/2021/03/08/python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%E5%A4%87%E6%9F%A5/"/>
     <id>http://lvwi.github.io/2021/03/08/python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%E5%A4%87%E6%9F%A5/</id>
     <published>2021-03-08T06:21:03.000Z</published>
-    <updated>2021-03-09T06:31:48.900Z</updated>
+    <updated>2021-03-16T08:17:38.846Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>python常用函数<br>python常用的函数及操作</p><a id="more"></a></blockquote><ol><li><p>filter(function,list)</p><ul><li>filter()函数是python内置的另一个有用的高阶函数</li><li>filter()函数接收一个函数f和一个list,</li><li>这个函数f的作用是对每个元素进行判断,返回True或False</li><li>filter()根据判断结果自动过滤掉不符合条件的元素</li></ul></li><li><p>如何将python文件打包成exe<br> (1) 找到需要打包的文件所在文件夹<br> (2) win + r 进到cmd页面, 安装pip install pyinstaller<br> (3) cd 到刚才的文件夹路径下</p> <img src='ptyheon打包操作界面1' loading="lazy">   ![](images/python打包操作界面1.jpg)   (4) 输入命令 pyinstaller --console --onefile xxxx.py   (5) 生成成功，在工程目录下有一个dist文件夹</li><li><p>生成折线图等<br> (1)画图不支持中文,但是可以导入字体来解决,或者在用的时候设置</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span>  plt</span><br><span class="line"> <span class="comment"># 方法1</span></span><br><span class="line"><span class="comment"># fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径</span></span><br><span class="line">zhfont1 = matplotlib.font_manager.FontProperties(fname=<span class="string">"SourceHanSansSC-Bold.otf"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x 轴"</span>, fontproperties=zhfont1)  </span><br><span class="line"><span class="comment"># 方法2</span></span><br><span class="line">plt.xlabel(<span class="string">"x轴"</span>,fontproperties=<span class="string">"SimSun"</span>) <span class="comment">#宋体</span></span><br></pre></td></tr></table></figure></li><li><p>subplot()<br>subplot() 函数允许你在同一图中绘制不同的东西。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span>  plt</span><br><span class="line">x = np.arange(<span class="number">0</span>,  <span class="number">3</span>  * np.pi,  <span class="number">0.1</span>) </span><br><span class="line">y_sin = np.sin(x) </span><br><span class="line">y_cos = np.cos(x)</span><br><span class="line">plt.subplot(<span class="number">2</span>,  <span class="number">1</span>,  <span class="number">1</span>)  </span><br><span class="line"><span class="comment"># 绘制第一个图像 </span></span><br><span class="line">plt.plot(x, y_sin) </span><br><span class="line">plt.title(<span class="string">'Sine'</span>)  </span><br><span class="line"><span class="comment"># 将第二个 subplot 激活，并绘制第二个图像</span></span><br><span class="line">plt.subplot(<span class="number">2</span>,  <span class="number">1</span>,  <span class="number">2</span>) </span><br><span class="line">plt.plot(x, y_cos) </span><br><span class="line">plt.title(<span class="string">'Cosine'</span>)</span><br></pre></td></tr></table></figure><p>plt.bar()</p></li></ol><p>参考文章:<br><a href="https://www.runoob.com/numpy/numpy-matplotlib.html" target="_blank" rel="noopener">参考链接</a></p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>python常用函数<br>python常用的函数及操作</p><a id="more"></a></blockquote><ol><li><p>filter(function,list)</p><ul><li>filter()函数是python内置的另一个有用的高阶函数</li><li>filter()函数接收一个函数f和一个list,</li><li>这个函数f的作用是对每个元素进行判断,返回True或False</li><li>filter()根据判断结果自动过滤掉不符合条件的元素</li></ul></li><li><p>如何将python文件打包成exe<br> (1) 找到需要打包的文件所在文件夹<br> (2) win + r 进到cmd页面, 安装pip install pyinstaller<br> (3) cd 到刚才的文件夹路径下</p> <img src='ptyheon打包操作界面1' loading="lazy">   ![](images/python打包操作界面1.jpg)   (4) 输入命令 pyinstaller --console --onefile xxxx.py   (5) 生成成功，在工程目录下有一个dist文件夹</li><li><p>生成折线图等<br> (1)画图不支持中文,但是可以导入字体来解决,或者在用的时候设置</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span>  plt</span><br><span class="line"> <span class="comment"># 方法1</span></span><br><span class="line"><span class="comment"># fname 为 你下载的字体库路径，注意 SourceHanSansSC-Bold.otf 字体的路径</span></span><br><span class="line">zhfont1 = matplotlib.font_manager.FontProperties(fname=<span class="string">"SourceHanSansSC-Bold.otf"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x 轴"</span>, fontproperties=zhfont1)  </span><br><span class="line"><span class="comment"># 方法2</span></span><br><span class="line">plt.xlabel(<span class="string">"x轴"</span>,fontproperties=<span class="string">"SimSun"</span>) <span class="comment">#宋体</span></span><br></pre></td></tr></table></figure></li><li><p>subplot()<br>subplot() 函数允许你在同一图中绘制不同的东西。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span>  plt</span><br><span class="line">x = np.arange(<span class="number">0</span>,  <span class="number">3</span>  * np.pi,  <span class="number">0.1</span>) </span><br><span class="line">y_sin = np.sin(x) </span><br><span class="line">y_cos = np.cos(x)</span><br><span class="line">plt.subplot(<span class="number">2</span>,  <span class="number">1</span>,  <span class="number">1</span>)  </span><br><span class="line"><span class="comment"># 绘制第一个图像 </span></span><br><span class="line">plt.plot(x, y_sin) </span><br><span class="line">plt.title(<span class="string">'Sine'</span>)  </span><br><span class="line"><span class="comment"># 将第二个 subplot 激活，并绘制第二个图像</span></span><br><span class="line">plt.subplot(<span class="number">2</span>,  <span class="number">1</span>,  <span class="number">2</span>) </span><br><span class="line">plt.plot(x, y_cos) </span><br><span class="line">plt.title(<span class="string">'Cosine'</span>)</span><br></pre></td></tr></table></figure><p>plt.bar()</p></li></ol><p>4 . 填充函数  </p><blockquote><p>填充fill(<em>args, *</em>kwargs)<br>args - sequence of x, y, [color]</p></blockquote><blockquote><p>区域填充fill_between<br>plt.plot(x, y)   # 先将图画出来<br>plt.fill_between(x, 0, y, facecolor=’green’, alpha=0.3)<br>plt.show()<br>可以看到，我用了这个函数的几个参数：<br>x：第一个参数表示覆盖的区域，我直接复制为x，表示整个x都覆盖<br>0：表示覆盖的下限<br>y：表示覆盖的上限是y这个曲线<br>facecolor：覆盖区域的颜色<br>alpha：覆盖区域的透明度[0,1],其值越大，表示越不透明  </p></blockquote><p>参考文章:<br><a href="https://www.runoob.com/numpy/numpy-matplotlib.html" target="_blank" rel="noopener">参考链接</a></p>]]></content>
     
     <summary type="html">
     
